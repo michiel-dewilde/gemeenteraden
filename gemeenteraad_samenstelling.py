@@ -8,6 +8,7 @@ Gebruik:
 Output CSV kolommen:
     gemeente, fractie, aantal_leden, totaal_raad, in_schepencollege, voorzitter_gemeenteraad
 
+- aantal_leden:             unieke personen met rol gemeenteraadslid of voorzitter gemeenteraad
 - in_schepencollege:        "ja" als de fractie minstens 1 schepen of de burgemeester leverde
 - voorzitter_gemeenteraad:  "ja" als de fractie de voorzitter van de gemeenteraad leverde
 """
@@ -71,13 +72,7 @@ def main():
     parser.add_argument("--input",  "-i", required=True)
     parser.add_argument("--output", "-o",
                         default="gemeenteraad_samenstelling_2018_2024.csv")
-    parser.add_argument("--voorzitter", action="store_true",
-                        help="Tel ook de voorzitter van de gemeenteraad mee")
     args = parser.parse_args()
-
-    toegelaten_rollen = {ROL_GEMEENTERAADSLID}
-    if args.voorzitter:
-        toegelaten_rollen.add(ROL_VOORZITTER_GR)
 
     # ------------------------------------------------------------------
     # 1. Laden
@@ -189,8 +184,7 @@ def main():
         elif rol == ROL_VOORZITTER_GR:
             if frac_uri:
                 voorzitter_fracties[gemeente].add(frac_uri)
-            if args.voorzitter:
-                raad_data[gemeente][frac_uri].add(identifier)
+            raad_data[gemeente][frac_uri].add(identifier)
         elif rol in ROLLEN_SCHEPENCOLLEGE:
             if frac_uri:
                 college_fracties[gemeente].add(frac_uri)
