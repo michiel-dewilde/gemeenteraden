@@ -43,7 +43,7 @@ ROLLEN_SCHEPENCOLLEGE = {ROL_BURGEMEESTER, ROL_SCHEPEN, ROL_TOE_SCHEPEN}
 
 # Legislatuur 2018-2024
 PERIODE_START = datetime(2018, 10, 1, tzinfo=timezone.utc)
-PERIODE_EINDE = datetime(2019,  6, 1, tzinfo=timezone.utc)
+PERIODE_EINDE = datetime(2019,  2, 1, tzinfo=timezone.utc)  # na feb worden vervangingen geregistreerd
 
 
 def parse_dt(literal):

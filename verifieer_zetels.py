@@ -10,13 +10,15 @@ import unicodedata
 import urllib.request
 import json
 from collections import defaultdict
+from pathlib import Path
 from bs4 import BeautifulSoup
 
 WIKIPEDIA_PAGINA = "Belgische_lokale_verkiezingen_2018"
 VLAAMSE_SECTIES  = {"Antwerpen": 19, "Limburg": 23,
                     "Oost-Vlaanderen": 26, "Vlaams-Brabant": 29,
                     "West-Vlaanderen": 32}
-UA = "Mozilla/5.0 (gemeenteraad-research/1.0)"
+UA        = "Mozilla/5.0 (gemeenteraad-research/1.0)"
+CACHE_DIR = Path("wikipedia_cache")
 
 # Mapping Wikipedia-kolomnamen -> genormaliseerde partijnamen + aliassen
 # Waarde = set van genormaliseerde namen die mogen matchen
@@ -32,11 +34,21 @@ PARTIJ_MAP = {
 
 
 def fetch_section_html(idx):
+    """Haalt HTML op voor een Wikipedia-sectie; gebruikt lokale cache indien aanwezig."""
+    CACHE_DIR.mkdir(exist_ok=True)
+    cache_file = CACHE_DIR / f"{WIKIPEDIA_PAGINA}_sectie{idx}.html"
+
+    if cache_file.exists():
+        return cache_file.read_text(encoding="utf-8")
+
     url = (f"https://nl.wikipedia.org/w/api.php?action=parse"
            f"&page={WIKIPEDIA_PAGINA}&prop=text&section={idx}&format=json")
     req = urllib.request.Request(url, headers={"User-Agent": UA})
     with urllib.request.urlopen(req) as r:
-        return json.load(r)["parse"]["text"]["*"]
+        html = json.load(r)["parse"]["text"]["*"]
+
+    cache_file.write_text(html, encoding="utf-8")
+    return html
 
 
 def normaliseer(s):

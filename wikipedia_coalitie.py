@@ -10,6 +10,7 @@ import time
 import unicodedata
 import urllib.request
 import json
+from pathlib import Path
 from bs4 import BeautifulSoup
 
 WIKIPEDIA_PAGINA = "Belgische_lokale_verkiezingen_2018"
@@ -23,17 +24,28 @@ VLAAMSE_SECTIES = {
     "West-Vlaanderen":   32,
 }
 
-UA = "Mozilla/5.0 (gemeenteraad-research/1.0)"
+UA        = "Mozilla/5.0 (gemeenteraad-research/1.0)"
+CACHE_DIR = Path("wikipedia_cache")
 
 
 def fetch_section_html(pagina, section_index):
+    """Haalt HTML op voor een Wikipedia-sectie; gebruikt lokale cache indien aanwezig."""
+    CACHE_DIR.mkdir(exist_ok=True)
+    cache_file = CACHE_DIR / f"{pagina}_sectie{section_index}.html"
+
+    if cache_file.exists():
+        return cache_file.read_text(encoding="utf-8")
+
     url = (
         f"https://nl.wikipedia.org/w/api.php"
         f"?action=parse&page={pagina}&prop=text&section={section_index}&format=json"
     )
     req = urllib.request.Request(url, headers={"User-Agent": UA})
     with urllib.request.urlopen(req) as r:
-        return json.load(r)["parse"]["text"]["*"]
+        html = json.load(r)["parse"]["text"]["*"]
+
+    cache_file.write_text(html, encoding="utf-8")
+    return html
 
 
 def parse_coalitie_tabel(html):
