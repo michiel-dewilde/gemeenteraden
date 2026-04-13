@@ -1,87 +1,77 @@
-# Gemeenteraad samenstelling 2018–2024
+# Gemeenteraad analyse 2018–2024
 
 ## Doel
 
-Bepaal per Vlaamse gemeente de samenstelling van de gemeenteraad voor de legislatuur 2018–2024: welke fracties hebben hoeveel leden, wie zit in het schepencollege, wie is voorzitter, en welke fracties zijn coalitiepartner?
+Analyseer per Vlaamse gemeente de volledige evolutie van de gemeenteraad en het schepencollege doorheen de legislatuur 2018–2024: welke fracties hadden hoeveel leden, wie was burgemeester, en hoe lang duurde elke unieke samenstelling?
 
-## Databronnen
+## Databron
 
-| Bron | Gebruik |
-|------|---------|
-| `mandaten-20260412031500084.ttl` | Ruwe data — ~1,69 miljoen RDF-triples uit de Mandatendatabank Vlaanderen |
-| `wikipedia_cache/` | Gecachte HTML van Wikipedia *Belgische lokale verkiezingen 2018*, per provincie (5 bestanden) |
+| Bestand | Beschrijving |
+|---------|-------------|
+| `mandaten-20260412031500084.ttl` | ~1,69 miljoen RDF-triples uit de Mandatendatabank Vlaanderen |
 
 De Mandatendatabank is beschikbaar via [mandaten.lokaalbestuur.vlaanderen.be](https://mandaten.lokaalbestuur.vlaanderen.be).
 
-## Scripts
+## Script: `analyseer.py`
 
-### `gemeenteraad_samenstelling.py` ← hoofdscript
-
-Genereert `gemeenteraad_samenstelling_2018_2024.csv`.
+Genereert `gemeenteraad_analyse_2018_2024.json`.
 
 ```
-python gemeenteraad_samenstelling.py --input mandaten-20260412031500084.ttl
+python analyseer.py --input mandaten-20260412031500084.ttl
 ```
 
-**Werkwijze:**
-- Filtert mandatarissen met `mandaat:start` tussen **2018-10-01 en 2019-02-01** (enkel verkiezingszetels, geen mid-term vervangingen)
-- Deduplicatie via `mandaat:isBestuurlijkeAliasVan` (persoon-URI): meerdere records voor dezelfde persoon tellen als 1
-- Rollen die meetellen in `aantal_leden`: gemeenteraadslid (`…5e000011`) én voorzitter gemeenteraad (`…5e000012`)
-- Gemeente-label via `mandaat:isTijdspecialisatieVan` → tijdloos orgaan → `skos:prefLabel`
-- Schepencollege: rollen burgemeester (`…5e000013`), schepen (`…5e000014`), toegevoegd schepen (`…59a9…`)
+### Legislatuur-afbakening (100% correct)
 
-**Output-kolommen:**
+De 2018–2024 organen worden geïdentificeerd via `mandaat:bindingStart` en `mandaat:bindingEinde` op `besluit:Bestuursorgaan`:
 
-| Kolom | Beschrijving |
-|-------|-------------|
-| `gemeente` | Gemeentenaam |
-| `fractie` | Fractienaam |
-| `aantal_leden` | Unieke verkozenen (gemeenteraadslid + voorzitter) |
-| `totaal_raad` | Totaal voor die gemeente |
-| `in_schepencollege` | ja/nee — fractie leverde schepen of burgemeester |
-| `voorzitter_gemeenteraad` | ja/nee — fractie leverde de voorzitter van de gemeenteraad |
-| `in_coalitie_volgens_wikipedia` | ja/nee/onbekend — zie `wikipedia_coalitie.py` |
+- `bindingStart = 2019-01-01` — installatiedatum na de gemeenteraadsverkiezingen van oktober 2018
+- `bindingEinde` in november 2024 – februari 2025 — varieert per gemeente naargelang de installatiedatum van de nieuwe raad na oktober 2024
 
----
+Alleen organen van het type **Gemeenteraad** en **College van Burgemeester en Schepenen** worden meegenomen (bepaald via `isTijdspecialisatieVan` → `skos:prefLabel`). OCMW, districten, provincieraden en burgemeester-organen worden uitgesloten.
 
-### `wikipedia_coalitie.py`
+Mandaten die vóór de legislatuur begonnen (ononderbroken carrières zonder nieuwe startdatum in de databank) worden geknipt op `bindingStart` van het orgaan.
 
-Voegt `in_coalitie_volgens_wikipedia` toe aan de CSV via de Wikipedia-pagina *Belgische lokale verkiezingen 2018*.
+### Werkwijze
 
-```
-python wikipedia_coalitie.py
-```
+1. Verzamel alle mandaten per gemeente met hun start- en einddatum. `mandaat:einde` is inclusief → +1 dag voor intern gebruik (exclusief eindpunt). Ontbrekende einddatum → `bindingEinde + 1 dag`.
+2. Bouw per gemeente een tijdlijn van alle unieke grenspunten (start- en einddatums).
+3. Bepaal voor elk interval de actieve mandaten (`start ≤ datum < einde`), tel per fractie in gemeenteraad en schepencollege, en registreer de burgemeesterfractie.
+4. Samenstellingen met identieke burgemeester + gemeenteraad + schepencollege worden samengevoegd; hun dagentelling wordt opgeteld.
+5. Sorteer per gemeente op aantal dagen (desc).
 
-- Leest HTML uit `wikipedia_cache/`; downloadt enkel opnieuw als een bestand ontbreekt
-- Matcht fractienamen heuristisch: normalisatie (accenten, leestekens) + aliassen voor hernoemde partijen (Vooruit = sp.a, VB = Vlaams Belang, …)
-- 74% exacte zetelmatch met Wikipedia (995/1336 gematchte rijen)
+### Relevante rollen
 
----
+| Rol | URI-suffix | Telt mee in |
+|-----|-----------|-------------|
+| Gemeenteraadslid | `…5e000011` | gemeenteraad |
+| Voorzitter gemeenteraad | `…5e000012` | gemeenteraad |
+| Burgemeester | `…5e000013` | schepencollege + burgemeester |
+| Schepen | `…5e000014` | schepencollege |
+| Toegevoegd schepen | `…59a9…` | schepencollege |
 
-### `verifieer_zetels.py`
+### Output-formaat (`gemeenteraad_analyse_2018_2024.json`)
 
-Vergelijkt `aantal_leden` per fractie in de CSV met de zeteltelling op Wikipedia.
+Toplevel object: gemeentenaam (alfabetisch) → lijst van samenstellingsobjecten, gesorteerd op `dagen` (desc):
 
-```
-python verifieer_zetels.py
-```
-
-Rapporteert afwijkingen per gemeente/fractie gesorteerd op grootte van het verschil.
-
----
-
-## Runvolgorde
-
-```
-python gemeenteraad_samenstelling.py --input mandaten-20260412031500084.ttl
-python wikipedia_coalitie.py
+```json
+{
+  "Aalst": [
+    {
+      "dagen": 980,
+      "burgemeester": "N-VA",
+      "gemeenteraad":   { "N-VA": 17, "Vlaams Belang": 7, "CD&V": 4 },
+      "schepencollege": { "N-VA": 6, "Open VLD": 1 }
+    }
+  ]
+}
 ```
 
-`verifieer_zetels.py` is optioneel voor kwaliteitscontrole.
+Fracties in `gemeenteraad` en `schepencollege` zijn gesorteerd groot→klein, bij gelijke stand alfabetisch.
 
 ## Bekende beperkingen
 
-- **`ext:isBestuurspartij`** bestaat in het datamodel maar is nergens ingevuld — coalitiedetectie via `in_schepencollege` of `in_coalitie_volgens_wikipedia`.
-- **4 fusiegemeenten** ontbreken in Wikipedia (`Bilzen-Hoeselt`, `Overpelt`, `Tessenderlo-Ham`, `Tongeren-Borgloon`) → `in_coalitie_volgens_wikipedia = onbekend`.
-- **Resterende ±1 afwijkingen** t.o.v. Wikipedia (26%): lokale kartels die als één fractie in de mandatendatabank staan maar gesplitst in Wikipedia, of omgekeerd.
-- Voorzitter gemeenteraad telt mee in `aantal_leden` maar zit doorgaans niet in `in_schepencollege`.
+- **Fractienamen**: de Mandatendatabank gebruikt de naam zoals geregistreerd door de gemeente. Hernoemingen (bv. sp.a → Vooruit) kunnen als aparte fracties verschijnen in opeenvolgende perioden.
+- **`"Onbekend"` als fractienaam**: treedt op wanneer een mandataris geen fractielidmaatschap heeft, of wanneer de fractie-URI in de TTL-dump geen label heeft (data-lek in de bron).
+- **`"Onbekend"` als burgemeester**: de burgemeesteraanstelling is een apart administratief besluit dat soms later geregistreerd wordt; voor sommige perioden ontbreekt de fractielink.
+- **Variërend zetelgetal per gemeente**: tussentijdse vervangingen kunnen korte intervallen (1–5 dagen) veroorzaken met een afwijkend zetelgetal door overlap of een kleine gap in de registratie.
+- **Herstappe**: ontbreekt in de dataset (te kleine gemeente, geen eigen registratie).
