@@ -44,7 +44,7 @@ Werkwijze
 Gebruik
 -------
     pip install rdflib
-    python analyseer.py --input mandaten-20260412031500084.ttl
+    python 1_analyseer_mandatendatabank.py --input mandaten-20260412031500084.ttl
 """
 
 import argparse

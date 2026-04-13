@@ -12,12 +12,12 @@ Analyseer per Vlaamse gemeente de volledige evolutie van de gemeenteraad en het 
 
 De Mandatendatabank is beschikbaar via [mandaten.lokaalbestuur.vlaanderen.be](https://mandaten.lokaalbestuur.vlaanderen.be).
 
-## Script: `analyseer.py`
+## Script: `1_analyseer_mandatendatabank.py`
 
 Genereert `gemeenteraad_analyse_2018_2024.json`.
 
 ```
-python analyseer.py --input mandaten-20260412031500084.ttl
+python 1_analyseer_mandatendatabank.py --input mandaten-20260412031500084.ttl
 ```
 
 ### Legislatuur-afbakening (100% correct)
