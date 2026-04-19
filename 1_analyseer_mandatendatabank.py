@@ -2,6 +2,15 @@
 Analyseert de samenstelling van gemeenteraad en schepencollege per Vlaamse gemeente
 voor de volledige legislatuur 2018-2024.
 
+Databron
+--------
+    Mandatendatabank Vlaanderen: https://mandaten.lokaalbestuur.vlaanderen.be/
+    Het inputbestand is een Turtle-dump die via die website kan worden gedownload.
+
+    Optioneel: verkiezingsresultaten XLS van Vlaanderen (2018):
+    https://assets.vlaanderen.be/raw/upload/v1699019526/
+    resultaten_verkiezing_gemeenteraad_20181014_na_20190702_bldgwf.xlsx
+
 Werkwijze
 ---------
 1. ORGANEN IDENTIFICEREN  (correcte legislatuur-afbakening)
@@ -21,8 +30,8 @@ Werkwijze
      1. Directe fractieregistratie op het mandaat zelf.
      2. Fractie van het GR-mandaat van dezelfde persoon (gemeenten registreren de fractie
         vaak alleen op het GR-mandaat en vergeten het bij het college-mandaat).
-     3. Manuele correctie uit fractie_correcties.json (gegenereerd door
-        3_genereer_correctielijst.py en handmatig ingevuld).
+     3. Opzoeking in de verkiezingsresultaten XLS op naam + gemeente (alleen als --xls
+        opgegeven of automatisch gevonden naast het script).
 
 3. WIJZIGINGSMOMENTEN
    De unieke verzameling van alle start- en einddatums per gemeente vormt de
@@ -52,15 +61,11 @@ Werkwijze
        "gemeenteraad":   {fractie: aantal, ...},
        "schepencollege": {fractie: aantal, ...} }
 
-Databron
---------
-    Mandatendatabank Vlaanderen: https://mandaten.lokaalbestuur.vlaanderen.be/
-    Het inputbestand is een Turtle-dump die via die website kan worden gedownload.
-
 Gebruik
 -------
-    pip install rdflib
+    pip install rdflib openpyxl
     python 1_analyseer_mandatendatabank.py --input mandaten-20260412031500084.ttl
+    python 1_analyseer_mandatendatabank.py --input mandaten-...ttl --xls resultaten_...xlsx
 """
 
 import argparse
@@ -68,6 +73,7 @@ import json
 import os
 import re
 import sys
+import unicodedata
 from collections import defaultdict
 from datetime import date, timedelta
 
@@ -77,6 +83,12 @@ try:
 except ImportError:
     print("Installeer rdflib: pip install rdflib")
     sys.exit(1)
+
+try:
+    import openpyxl
+    _OPENPYXL_BESCHIKBAAR = True
+except ImportError:
+    _OPENPYXL_BESCHIKBAAR = False
 
 # ---------------------------------------------------------------------------
 # Namespaces
@@ -103,8 +115,43 @@ ROLLEN_COLLEGE = {ROL_BURGEMEESTER, ROL_SCHEPEN, ROL_TOE_SCHEPEN}
 ALLE_ROLLEN    = ROLLEN_GR | ROLLEN_COLLEGE
 
 # ---------------------------------------------------------------------------
+# Manuele URI-correcties (fractie ontbreekt volledig in de TTL-dump)
+# ---------------------------------------------------------------------------
+# Vastgesteld via diagnose_fracties.py; naam opgezocht via algemene websearch.
+_FRACTIE_URI_CORRECTIES = {
+    "http://data.lblod.info/id/fracties/cdd79247-de17-405a-b0d6-1aacb12db93f": "N-VA",
+    # Aartselaar: fractie ontbreekt als mandaat:Fractie-node en heeft geen label in de TTL-dump;
+    # leden: Jan Van der Heyden en Sophie De Wit; naam manueel gecorrigeerd.
+}
+
+# ---------------------------------------------------------------------------
+# XLS-opzoeking: gemeentealiassen en hardcoded naamcorrecties
+# ---------------------------------------------------------------------------
+# Gemeenten waarvan de naam in de Mandatendatabank afwijkt van de naam in het XLS.
+_GEMEENTE_ALIASSEN = {
+    "tongeren-borgloon": "tongeren",
+}
+
+# Personen die niet via naammatching gevonden worden (roepnamen, schrijfwijze-varianten).
+_XLS_HARDCODED = {
+    ("Brecht", "Christel Covents"): "CD&V-CDB",  # XLS: Covens (zonder t)
+    ("Essen",  "Bob Konings"):      "N-VA/PLE",   # XLS: Johan Konings; Bob is roepnaam
+}
+
+# ---------------------------------------------------------------------------
 # Hulpfuncties
 # ---------------------------------------------------------------------------
+
+_UUID_RE = re.compile(
+    r'^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$', re.IGNORECASE
+)
+
+# Standaard XLS-bestandsnaam naast het script
+_STANDAARD_XLS = os.path.join(
+    os.path.dirname(__file__),
+    "resultaten_verkiezing_gemeenteraad_20181014_na_20190702_bldgwf.xlsx",
+)
+
 
 def parse_date(literal):
     """Zet een RDF-literal om naar een Python date-object (neemt enkel de datumcomponent)."""
@@ -117,26 +164,20 @@ def parse_date(literal):
         return None
 
 
-_UUID_RE = re.compile(
-    r'^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$', re.IGNORECASE
-)
+def _normaliseer(tekst: str) -> str:
+    """Lowercase, accenten weg, leestekens weg, overtollige spaties weg."""
+    if not tekst:
+        return ""
+    nfkd = unicodedata.normalize("NFKD", str(tekst))
+    ascii_str = nfkd.encode("ascii", "ignore").decode("ascii")
+    return " ".join(ascii_str.lower().split())
 
-# Manuele correcties voor fracties die ontbreken in de inputdata (geen label, geen Fractie-node).
-# Vastgesteld via diagnose_fracties.py; naam opgezocht via algemene websearch.
-_FRACTIE_CORRECTIES = {
-    "http://data.lblod.info/id/fracties/cdd79247-de17-405a-b0d6-1aacb12db93f": "N-VA",
-    # Aartselaar: fractie ontbreekt als mandaat:Fractie-node en heeft geen label in de TTL-dump;
-    # leden: Jan Van der Heyden en Sophie De Wit; naam manueel gecorrigeerd.
-}
 
-# Manuele correcties per persoon per gemeente, uit fractie_correcties.json.
-# Gegenereerd door 3_genereer_correctielijst.py; handmatig ingevuld.
-# Formaat: { gemeente: { "Voornaam Familienaam": "Fractienaam" } }
-_CORRECTIES_BESTAND = os.path.join(os.path.dirname(__file__), "fractie_correcties.json")
-_PERSOON_CORRECTIES: dict = {}
-if os.path.exists(_CORRECTIES_BESTAND):
-    with open(_CORRECTIES_BESTAND, encoding="utf-8") as _f:
-        _PERSOON_CORRECTIES = json.load(_f)
+def _eerste_token(tekst: str) -> str:
+    """Geeft het eerste woord (roepnaam) terug."""
+    tokens = _normaliseer(tekst).split()
+    return tokens[0] if tokens else ""
+
 
 def best_label(g, uri):
     """
@@ -145,8 +186,8 @@ def best_label(g, uri):
     (wat betekent dat de fractie-beschrijving ontbreekt in de TTL-dump).
     """
     uri_str = str(uri)
-    if uri_str in _FRACTIE_CORRECTIES:
-        return _FRACTIE_CORRECTIES[uri_str]
+    if uri_str in _FRACTIE_URI_CORRECTIES:
+        return _FRACTIE_URI_CORRECTIES[uri_str]
     for pred in (SKOS.prefLabel, REGORG.legalName, FOAF.name, SKOS.altLabel):
         for obj in g.objects(uri, pred):
             lbl = str(obj).strip()
@@ -193,12 +234,113 @@ def samenstelling_sleutel(gemeenteraad, schepencollege):
 
 
 # ---------------------------------------------------------------------------
+# XLS-opzoeking
+# ---------------------------------------------------------------------------
+
+def laad_xls_lookup(xls_pad: str) -> dict:
+    """
+    Leest het kandidatentabblad van de Vlaamse verkiezingsresultaten XLS en
+    bouwt een opzoektabel:
+        (gemeente_genorm, achternaam_genorm, voornaam_eerste_token) -> lijstnaam
+
+    Bevat alle kandidaten (verkozen én opvolgers) zodat ook raadsleden die tijdens
+    de legislatuur instroomden gekoppeld kunnen worden.
+    Ambigue sleutels (zelfde naam, verschillende lijst binnen dezelfde gemeente)
+    worden verwijderd om foutieve koppelingen te vermijden.
+    """
+    if not _OPENPYXL_BESCHIKBAAR:
+        print("  [waarschuwing] openpyxl niet geinstalleerd — XLS-terugval overgeslagen.")
+        return {}
+
+    wb = openpyxl.load_workbook(xls_pad, read_only=True, data_only=True)
+    ws = wb["kandidaten"]
+    rijen = ws.iter_rows(values_only=True)
+    for _ in range(3):          # sla twee notitierijen en de headerrij over
+        next(rijen)
+
+    lookup: dict = {}
+    ambiguous: set = set()
+
+    for r in rijen:
+        if not r[3]:            # lege rij
+            continue
+        gemeente   = _normaliseer(r[3])    # col 3: kieskring
+        lijst      = str(r[9]).strip()     # col 9: lijst
+        achternaam = _normaliseer(r[25])   # col 25: RRachternaam
+        voornaam   = _eerste_token(r[26])  # col 26: RRvoornaam (eerste token)
+
+        if not achternaam or not voornaam:
+            continue
+
+        sleutel = (gemeente, achternaam, voornaam)
+        if sleutel in lookup:
+            if lookup[sleutel] != lijst:
+                ambiguous.add(sleutel)
+        else:
+            lookup[sleutel] = lijst
+
+    for s in ambiguous:
+        del lookup[s]
+
+    return lookup
+
+
+def zoek_in_xls(naam: str, gemeente: str, lookup: dict) -> str | None:
+    """
+    Zoekt de lijstnaam voor een persoon in de XLS-opzoektabel.
+
+    Strategieën (van strikt naar soepel):
+    1. Hardcoded correcties voor bekende naam-/roepnaamvarianten.
+    2. Exacte match op (gemeente, achternaam, voornaam_eerste_token),
+       eventueel met gemeentealias.
+    3. Achternaam-only binnen gemeente (enkel bij unieke treffer).
+    4. Fuzzy achternaam: verwijder dubbele medeklinkers (bv. Mattys/Matthys).
+    """
+    hardcoded = _XLS_HARDCODED.get((gemeente, naam))
+    if hardcoded:
+        return hardcoded
+
+    delen = naam.strip().split()
+    if len(delen) < 2:
+        return None
+
+    gemeente_n   = _normaliseer(gemeente)
+    gemeente_xls = _GEMEENTE_ALIASSEN.get(gemeente_n, gemeente_n)
+    voornaam_n   = _eerste_token(delen[0])
+    achternaam_n = _normaliseer(" ".join(delen[1:]))
+
+    for gem in dict.fromkeys([gemeente_n, gemeente_xls]):   # unieke volgorde behouden
+        sleutel = (gem, achternaam_n, voornaam_n)
+        if sleutel in lookup:
+            return lookup[sleutel]
+
+        treffers = {v for (g, a, _), v in lookup.items()
+                    if g == gem and a == achternaam_n}
+        if len(treffers) == 1:
+            return treffers.pop()
+
+        ach_fuzzy = achternaam_n.replace("tt", "t").replace("th", "t")
+        treffers = {v for (g, a, _), v in lookup.items()
+                    if g == gem
+                    and a.replace("tt", "t").replace("th", "t") == ach_fuzzy}
+        if len(treffers) == 1:
+            return treffers.pop()
+
+    return None
+
+
+# ---------------------------------------------------------------------------
 # Stap 1 & 2: mandaten laden
 # ---------------------------------------------------------------------------
 
-def laad_mandaten(g):
+def laad_mandaten(g, xls_lookup: dict):
     """
     Identificeert de 2018-2024 organen en verzamelt alle relevante mandaten per gemeente.
+
+    Parameters
+    ----------
+    g           : geladen RDFlib Graph
+    xls_lookup  : opzoektabel gebouwd door laad_xls_lookup() (mag leeg dict zijn)
 
     Geeft terug: dict  gemeente_naam -> list van dicts
         { "start": date, "einde": date (exclusief), "rol": URIRef, "fractie": str }
@@ -232,10 +374,9 @@ def laad_mandaten(g):
 
     print(f"  2018-2024 organen gevonden : {len(organen_2018_2024)}")
 
-    # Fallback-opzoektabel: persoon URI -> fractielabel van het gemeenteraadslid-mandaat.
+    # Terugval 2: persoon URI -> fractielabel van het gemeenteraadslid-mandaat.
     # Gemeenten registreren de fractie vaak alleen op het GR-mandaat en vergeten het op het
-    # college-mandaat. Als het college-mandaat geen fractie heeft, gebruiken we de fractie
-    # van het GR-mandaat van dezelfde persoon als terugval.
+    # college-mandaat.
     persoon_fractie_gr: dict = {}
     for orgaan in organen_2018_2024:
         for post in g.objects(orgaan, ORG.hasPost):
@@ -286,17 +427,22 @@ def laad_mandaten(g):
                 lid_uri  = g.value(mandataris, ORG.hasMembership)
                 frac_uri = g.value(lid_uri, ORG.organisation) if lid_uri else None
                 persoon  = g.value(mandataris, MANDAAT.isBestuurlijkeAliasVan)
+
+                # Terugval 1: directe fractieregistratie op het mandaat
                 if frac_uri:
                     fractie = best_label(g, frac_uri)
                 else:
                     # Terugval 2: fractie van het GR-mandaat van dezelfde persoon
                     fractie = persoon_fractie_gr.get(persoon, "Onbekend")
-                if fractie == "Onbekend" and persoon and _PERSOON_CORRECTIES:
-                    # Terugval 3: manuele correctie uit fractie_correcties.json
+
+                # Terugval 3: opzoeking in de verkiezingsresultaten XLS
+                if fractie == "Onbekend" and persoon and xls_lookup is not None:
                     fn   = str(g.value(persoon, FOAF.familyName) or "")
                     gn   = str(g.value(persoon, GVN) or "")
                     naam = f"{gn} {fn}".strip()
-                    fractie = _PERSOON_CORRECTIES.get(gemeente, {}).get(naam, "Onbekend")
+                    gevonden = zoek_in_xls(naam, gemeente, xls_lookup)
+                    if gevonden:
+                        fractie = gevonden
 
                 mandaten_per_gemeente[gemeente].append({
                     "start":   start,
@@ -319,10 +465,12 @@ def analyseer_gemeente(mandaten):
     """
     Berekent per gemeente de unieke samenstellingsperioden met hun dagentelling.
 
-    Installatiefilter: intervallen vóór het moment waarop de gemeenteraad haar
-    maximale ledenaantal bereikt worden weggelaten. De installatieperiode (tussen
-    de administratieve orgaanstartdatum 2019-01-01 en de eigenlijke installatie-
-    vergadering) valt zo automatisch weg, omdat niet alle leden al actief zijn.
+    Installatiefilter: intervallen vóór het eerste interval met het *stabiele*
+    ledenaantal worden weggelaten. Het stabiele ledenaantal is het hoogste getal
+    dat gedurende minstens 365 dagen aanwezig was (gesommeerd over alle intervallen
+    met dat getal). Valt terug op het absolute maximum als geen enkel ledenaantal
+    365 dagen haalt. Zo valt de installatieperiode automatisch weg zonder dat een
+    tijdelijke verhoging van slechts enkele dagen als referentie wordt gebruikt.
 
     Input:  lijst van mandate-dicts { start, einde (excl.), rol, fractie }
     Output: lijst van dicts { "dagen", "gemeenteraad", "schepencollege" },
@@ -359,12 +507,24 @@ def analyseer_gemeente(mandaten):
     if not intervallen:
         return []
 
-    # Bepaal het maximale gemeenteraadslidmaatschap over alle intervallen.
-    # Intervallen vóór het eerste interval dat dit maximum bereikt worden
-    # weggelaten: die horen bij de installatieperiode.
-    max_gr = max(sum(gr.values()) for _, gr, _ in intervallen)
+    # Bepaal het stabiele gemeenteraadslidmaatschap: het hoogste ledenaantal dat
+    # gedurende minstens 365 dagen aanwezig was (sommeer over alle intervallen met
+    # dat ledenaantal). Valt terug op het absolute maximum als geen enkel ledenaantal
+    # 365 dagen haalt — dit voorkomt dat een tijdelijke verhoging van slechts enkele
+    # dagen als referentie wordt gebruikt.
+    dagen_per_grootte: dict[int, int] = {}
+    for dagen, gr, _ in intervallen:
+        n = sum(gr.values())
+        dagen_per_grootte[n] = dagen_per_grootte.get(n, 0) + dagen
+
+    abs_max = max(dagen_per_grootte)
+    stabiel_max = max(
+        (n for n, d in dagen_per_grootte.items() if d >= 365),
+        default=abs_max,
+    )
+
     eerste_vol = next(i for i, (_, gr, _) in enumerate(intervallen)
-                      if sum(gr.values()) == max_gr)
+                      if sum(gr.values()) == stabiel_max)
     intervallen = intervallen[eerste_vol:]
 
     # Dedupliceer: perioden met identieke samenstelling worden samengevoegd
@@ -393,7 +553,20 @@ def main():
                         help="Pad naar het Turtle-bestand van de Mandatendatabank")
     parser.add_argument("--output", "-o", default="gemeenteraad_analyse_2018_2024.json",
                         help="Pad voor het JSON-uitvoerbestand")
+    parser.add_argument("--xls", "-x", default=None,
+                        help="Pad naar het verkiezingsresultaten XLS-bestand (optioneel; "
+                             "wordt automatisch gevonden als het naast het script staat)")
     args = parser.parse_args()
+
+    # XLS laden voor fractie-terugval
+    xls_pad = args.xls or (_STANDAARD_XLS if os.path.exists(_STANDAARD_XLS) else None)
+    xls_lookup: dict = {}
+    if xls_pad:
+        print(f"XLS laden: {xls_pad} ...")
+        xls_lookup = laad_xls_lookup(xls_pad)
+        print(f"  {len(xls_lookup)} kandidatensleutels opgebouwd.\n")
+    else:
+        print("XLS niet gevonden — terugval 3 (verkiezingsresultaten) overgeslagen.\n")
 
     print(f"Laden: {args.input} ...")
     g = Graph()
@@ -401,7 +574,7 @@ def main():
     print(f"  {len(g)} triples geladen.\n")
 
     print("Mandaten verzamelen voor legislatuur 2018-2024...")
-    mandaten_per_gemeente = laad_mandaten(g)
+    mandaten_per_gemeente = laad_mandaten(g, xls_lookup)
     print()
 
     print("Analyseren per gemeente...")

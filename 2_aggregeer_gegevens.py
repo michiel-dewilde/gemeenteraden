@@ -1,5 +1,5 @@
 """
-Aggregeert de tijdlijn-analyse per gemeente naar gewogen gemiddelden.
+Aggregeert de tijdlijn-analyse per gemeente naar gewogen gemiddelden over de legislatuur.
 
 Invoer : gemeenteraad_analyse_2018_2024.json  (uitvoer van 1_analyseer_mandatendatabank.py)
 Uitvoer: gemeenteraad_aggregatie_2018_2024.json
