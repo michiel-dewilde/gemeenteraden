@@ -1,3 +1,4 @@
 * text=auto eol=lf
 mandaten-*.csv filter=lfs diff=lfs merge=lfs -text
 mandaten-*.ttl filter=lfs diff=lfs merge=lfs -text
+*.xlsx filter=lfs diff=lfs merge=lfs -text

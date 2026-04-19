@@ -13,10 +13,16 @@ Werkwijze
 
 2. MANDATEN VERZAMELEN
    Relevante rollen per orgaan:
-     Gemeenteraad : gemeenteraadslid (…000011) en voorzitter gemeenteraad (…000012)
+     Gemeenteraad : gemeenteraadslid (…000011) — burgemeester zit hier al in via dit mandaat
      Schepencollege: burgemeester (…000013), schepen (…000014), toegevoegd schepen (…59a9…)
    Per mandaat: fractie, startdatum, einddatum (exclusief = mandaat:einde + 1 dag).
    Ontbrekende einddatum → orgaan.bindingEinde + 1 dag.
+   Fractie-terugval (in volgorde):
+     1. Directe fractieregistratie op het mandaat zelf.
+     2. Fractie van het GR-mandaat van dezelfde persoon (gemeenten registreren de fractie
+        vaak alleen op het GR-mandaat en vergeten het bij het college-mandaat).
+     3. Manuele correctie uit fractie_correcties.json (gegenereerd door
+        3_genereer_correctielijst.py en handmatig ingevuld).
 
 3. WIJZIGINGSMOMENTEN
    De unieke verzameling van alle start- en einddatums per gemeente vormt de
@@ -25,21 +31,31 @@ Werkwijze
 4. SAMENSTELLING PER INTERVAL
    Actieve mandaten op datum d: start ≤ d < einde (exclusief).
    Per interval:
-     - burgemeester : fractienaam van de actieve burgemeester
      - gemeenteraad : {fractie: aantal_leden}, gesorteerd groot→klein, dan alfabetisch
      - schepencollege: {fractie: aantal_leden}, zelfde sortering
    Fracties met identieke naam worden samengevoegd.
 
-5. DEDUPLICATIE EN AGGREGATIE
-   Perioden met exact dezelfde samenstelling (zelfde burgemeester, gemeenteraad én
-   schepencollege) worden samengevoegd; hun dagentelling wordt opgeteld.
+5. INSTALLATIEFILTER
+   Intervallen vóór het eerste interval waarin de gemeenteraad haar maximale
+   ledenaantal bereikt, worden weggelaten. Zo valt de installatieperiode
+   (administratieve orgaanstart 2019-01-01 t.e.m. de eigenlijke installatie-
+   vergadering) automatisch weg.
+
+6. DEDUPLICATIE EN AGGREGATIE
+   Perioden met exact dezelfde samenstelling (zelfde gemeenteraad én schepencollege)
+   worden samengevoegd; hun dagentelling wordt opgeteld.
    Eindresultaat per gemeente: lijst gesorteerd op aantal dagen (desc).
 
-6. JSON-UITVOER
+7. JSON-UITVOER
    Toplevel: gemeentenaam (alfabetisch) → lijst van objecten:
-     { "dagen": int, "burgemeester": str,
+     { "dagen": int,
        "gemeenteraad":   {fractie: aantal, ...},
        "schepencollege": {fractie: aantal, ...} }
+
+Databron
+--------
+    Mandatendatabank Vlaanderen: https://mandaten.lokaalbestuur.vlaanderen.be/
+    Het inputbestand is een Turtle-dump die via die website kan worden gedownload.
 
 Gebruik
 -------
@@ -49,6 +65,7 @@ Gebruik
 
 import argparse
 import json
+import os
 import re
 import sys
 from collections import defaultdict
@@ -66,6 +83,7 @@ except ImportError:
 # ---------------------------------------------------------------------------
 MANDAAT = Namespace("http://data.vlaanderen.be/ns/mandaat#")
 BESLUIT = Namespace("http://data.vlaanderen.be/ns/besluit#")
+GVN     = URIRef("http://data.vlaanderen.be/ns/persoon#gebruikteVoornaam")
 ORG     = Namespace("http://www.w3.org/ns/org#")
 REGORG  = Namespace("https://www.w3.org/ns/regorg#")
 
@@ -78,7 +96,9 @@ ROL_BURGEMEESTER     = URIRef("http://data.vlaanderen.be/id/concept/Bestuursfunc
 ROL_SCHEPEN          = URIRef("http://data.vlaanderen.be/id/concept/BestuursfunctieCode/5ab0e9b8a3b2ca7c5e000014")
 ROL_TOE_SCHEPEN      = URIRef("http://data.vlaanderen.be/id/concept/BestuursfunctieCode/59a90e03-4f22-4bb9-8c91-132618db4b38")
 
-ROLLEN_GR      = {ROL_GEMEENTERAADSLID, ROL_VOORZITTER_GR}
+# ROL_VOORZITTER_GR wordt bewust weggelaten: de voorzitter heeft ook een ROL_GEMEENTERAADSLID-
+# mandaat, zodat meetelling van beide rollen tot dubbeltellingen leidt (+1 zetel per gemeente).
+ROLLEN_GR      = {ROL_GEMEENTERAADSLID}
 ROLLEN_COLLEGE = {ROL_BURGEMEESTER, ROL_SCHEPEN, ROL_TOE_SCHEPEN}
 ALLE_ROLLEN    = ROLLEN_GR | ROLLEN_COLLEGE
 
@@ -108,6 +128,15 @@ _FRACTIE_CORRECTIES = {
     # Aartselaar: fractie ontbreekt als mandaat:Fractie-node en heeft geen label in de TTL-dump;
     # leden: Jan Van der Heyden en Sophie De Wit; naam manueel gecorrigeerd.
 }
+
+# Manuele correcties per persoon per gemeente, uit fractie_correcties.json.
+# Gegenereerd door 3_genereer_correctielijst.py; handmatig ingevuld.
+# Formaat: { gemeente: { "Voornaam Familienaam": "Fractienaam" } }
+_CORRECTIES_BESTAND = os.path.join(os.path.dirname(__file__), "fractie_correcties.json")
+_PERSOON_CORRECTIES: dict = {}
+if os.path.exists(_CORRECTIES_BESTAND):
+    with open(_CORRECTIES_BESTAND, encoding="utf-8") as _f:
+        _PERSOON_CORRECTIES = json.load(_f)
 
 def best_label(g, uri):
     """
@@ -155,10 +184,9 @@ def sorteer_op_grootte(telling):
     return dict(sorted(telling.items(), key=lambda kv: (-kv[1], kv[0])))
 
 
-def samenstelling_sleutel(burgemeester, gemeenteraad, schepencollege):
+def samenstelling_sleutel(gemeenteraad, schepencollege):
     """Maakt een hashbare sleutel van een samenstelling voor deduplicatie."""
     return (
-        burgemeester,
         tuple(sorted(gemeenteraad.items())),
         tuple(sorted(schepencollege.items())),
     )
@@ -204,6 +232,24 @@ def laad_mandaten(g):
 
     print(f"  2018-2024 organen gevonden : {len(organen_2018_2024)}")
 
+    # Fallback-opzoektabel: persoon URI -> fractielabel van het gemeenteraadslid-mandaat.
+    # Gemeenten registreren de fractie vaak alleen op het GR-mandaat en vergeten het op het
+    # college-mandaat. Als het college-mandaat geen fractie heeft, gebruiken we de fractie
+    # van het GR-mandaat van dezelfde persoon als terugval.
+    persoon_fractie_gr: dict = {}
+    for orgaan in organen_2018_2024:
+        for post in g.objects(orgaan, ORG.hasPost):
+            if post_rol.get(post) != ROL_GEMEENTERAADSLID:
+                continue
+            for mandataris in g.subjects(ORG.holds, post):
+                persoon = g.value(mandataris, MANDAAT.isBestuurlijkeAliasVan)
+                if persoon is None:
+                    continue
+                lid_uri  = g.value(mandataris, ORG.hasMembership)
+                frac_uri = g.value(lid_uri, ORG.organisation) if lid_uri else None
+                if frac_uri:
+                    persoon_fractie_gr[persoon] = best_label(g, frac_uri)
+
     # Mandaten verzamelen
     mandaten_per_gemeente = defaultdict(list)
     teller = 0
@@ -239,7 +285,18 @@ def laad_mandaten(g):
 
                 lid_uri  = g.value(mandataris, ORG.hasMembership)
                 frac_uri = g.value(lid_uri, ORG.organisation) if lid_uri else None
-                fractie  = best_label(g, frac_uri) if frac_uri else "Onbekend"
+                persoon  = g.value(mandataris, MANDAAT.isBestuurlijkeAliasVan)
+                if frac_uri:
+                    fractie = best_label(g, frac_uri)
+                else:
+                    # Terugval 2: fractie van het GR-mandaat van dezelfde persoon
+                    fractie = persoon_fractie_gr.get(persoon, "Onbekend")
+                if fractie == "Onbekend" and persoon and _PERSOON_CORRECTIES:
+                    # Terugval 3: manuele correctie uit fractie_correcties.json
+                    fn   = str(g.value(persoon, FOAF.familyName) or "")
+                    gn   = str(g.value(persoon, GVN) or "")
+                    naam = f"{gn} {fn}".strip()
+                    fractie = _PERSOON_CORRECTIES.get(gemeente, {}).get(naam, "Onbekend")
 
                 mandaten_per_gemeente[gemeente].append({
                     "start":   start,
@@ -262,55 +319,63 @@ def analyseer_gemeente(mandaten):
     """
     Berekent per gemeente de unieke samenstellingsperioden met hun dagentelling.
 
+    Installatiefilter: intervallen vóór het moment waarop de gemeenteraad haar
+    maximale ledenaantal bereikt worden weggelaten. De installatieperiode (tussen
+    de administratieve orgaanstartdatum 2019-01-01 en de eigenlijke installatie-
+    vergadering) valt zo automatisch weg, omdat niet alle leden al actief zijn.
+
     Input:  lijst van mandate-dicts { start, einde (excl.), rol, fractie }
-    Output: lijst van dicts { "dagen", "burgemeester", "gemeenteraad", "schepencollege" },
+    Output: lijst van dicts { "dagen", "gemeenteraad", "schepencollege" },
             gesorteerd op aantal dagen (desc)
     """
     # Alle unieke grenspunten op de tijdlijn
     datums = sorted({m["start"] for m in mandaten} | {m["einde"] for m in mandaten})
 
-    # Deduplicatietabel: samenstelling_sleutel -> samenstellingsdict
-    unieke_samenstellingen = {}
-
+    # Bereken per interval de gemeenteraadsgrootte en de volledige samenstelling
+    intervallen = []
     for i in range(len(datums) - 1):
         d_start = datums[i]
         d_einde = datums[i + 1]
         dagen   = (d_einde - d_start).days
 
-        # Actieve mandaten: start <= d_start < einde (exclusief)
         actief = [m for m in mandaten if m["start"] <= d_start < m["einde"]]
         if not actief:
             continue
 
-        # Tel per fractie in gemeenteraad en schepencollege
         gr_telling  = defaultdict(int)
         col_telling = defaultdict(int)
-        burgemeester_fractie = None
-
         for m in actief:
             if m["rol"] in ROLLEN_GR:
                 gr_telling[m["fractie"]] += 1
             if m["rol"] in ROLLEN_COLLEGE:
                 col_telling[m["fractie"]] += 1
-            if m["rol"] == ROL_BURGEMEESTER:
-                burgemeester_fractie = m["fractie"]
 
-        gr_gesorteerd  = sorteer_op_grootte(dict(gr_telling))
-        col_gesorteerd = sorteer_op_grootte(dict(col_telling))
+        intervallen.append((
+            dagen,
+            sorteer_op_grootte(dict(gr_telling)),
+            sorteer_op_grootte(dict(col_telling)),
+        ))
 
-        sleutel = samenstelling_sleutel(
-            burgemeester_fractie or "Onbekend",
-            gr_gesorteerd,
-            col_gesorteerd,
-        )
+    if not intervallen:
+        return []
 
+    # Bepaal het maximale gemeenteraadslidmaatschap over alle intervallen.
+    # Intervallen vóór het eerste interval dat dit maximum bereikt worden
+    # weggelaten: die horen bij de installatieperiode.
+    max_gr = max(sum(gr.values()) for _, gr, _ in intervallen)
+    eerste_vol = next(i for i, (_, gr, _) in enumerate(intervallen)
+                      if sum(gr.values()) == max_gr)
+    intervallen = intervallen[eerste_vol:]
+
+    # Dedupliceer: perioden met identieke samenstelling worden samengevoegd
+    unieke_samenstellingen = {}
+    for dagen, gr_gesorteerd, col_gesorteerd in intervallen:
+        sleutel = samenstelling_sleutel(gr_gesorteerd, col_gesorteerd)
         if sleutel in unieke_samenstellingen:
-            # Zelfde samenstelling: tel dagen bij
             unieke_samenstellingen[sleutel]["dagen"] += dagen
         else:
             unieke_samenstellingen[sleutel] = {
                 "dagen":          dagen,
-                "burgemeester":   burgemeester_fractie or "Onbekend",
                 "gemeenteraad":   gr_gesorteerd,
                 "schepencollege": col_gesorteerd,
             }
@@ -355,7 +420,7 @@ def main():
     eerste_gemeente, perioden = next(iter(resultaat.items()))
     print(f"Voorbeeld: {eerste_gemeente}  ({len(perioden)} unieke samenstellingen)")
     for p in perioden[:3]:
-        print(f"  {p['dagen']:>4} dagen | burgemeester: {p['burgemeester']}")
+        print(f"  {p['dagen']:>4} dagen")
         print(f"    Gemeenteraad   : {p['gemeenteraad']}")
         print(f"    Schepencollege : {p['schepencollege']}")
 

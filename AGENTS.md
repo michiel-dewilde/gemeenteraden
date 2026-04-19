@@ -44,10 +44,14 @@ Mandaten die vóór de legislatuur begonnen (ononderbroken carrières zonder nie
 | Rol | URI-suffix | Telt mee in |
 |-----|-----------|-------------|
 | Gemeenteraadslid | `…5e000011` | gemeenteraad |
-| Voorzitter gemeenteraad | `…5e000012` | gemeenteraad |
-| Burgemeester | `…5e000013` | schepencollege + burgemeester |
+| ~~Voorzitter gemeenteraad~~ | `…5e000012` | *(genegeerd — zie hieronder)* |
+| Burgemeester | `…5e000013` | schepencollege |
 | Schepen | `…5e000014` | schepencollege |
 | Toegevoegd schepen | `…59a9…` | schepencollege |
+
+De rol **Voorzitter gemeenteraad** wordt niet meegeteld: de voorzitter heeft altijd ook een actief Gemeenteraadslid-mandaat; beide rollen tegelijk meetellen geeft een dubbeltelling van 1 zetel per gemeente.
+
+De **burgemeester** wordt niet apart bijgehouden. Hij/zij telt mee in de gemeenteraad via het Gemeenteraadslid-mandaat (aanwezig bij 387 van de burgemeesters in de dataset) en in het schepencollege via het Burgemeester-mandaat.
 
 ### Output-formaat (`gemeenteraad_analyse_2018_2024.json`)
 
@@ -58,7 +62,6 @@ Toplevel object: gemeentenaam (alfabetisch) → lijst van samenstellingsobjecten
   "Aalst": [
     {
       "dagen": 980,
-      "burgemeester": "N-VA",
       "gemeenteraad":   { "N-VA": 17, "Vlaams Belang": 7, "CD&V": 4 },
       "schepencollege": { "N-VA": 6, "Open VLD": 1 }
     }
@@ -76,6 +79,5 @@ Fracties in `gemeenteraad` en `schepencollege` zijn gesorteerd groot→klein, bi
   | Fractie-URI | Gemeente | Gecorrigeerde naam | Leden |
   |-------------|----------|--------------------|-------|
   | `cdd79247-de17-405a-b0d6-1aacb12db93f` | Aartselaar | N-VA | Jan Van der Heyden, Sophie De Wit |
-- **`"Onbekend"` als burgemeester**: de burgemeesteraanstelling is een apart administratief besluit dat soms later geregistreerd wordt; voor sommige perioden ontbreekt de fractielink.
 - **Variërend zetelgetal per gemeente**: tussentijdse vervangingen kunnen korte intervallen (1–5 dagen) veroorzaken met een afwijkend zetelgetal door overlap of een kleine gap in de registratie.
 - **Herstappe**: ontbreekt in de dataset (te kleine gemeente, geen eigen registratie).

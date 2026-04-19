@@ -1,0 +1,4081 @@
+{
+  "Aalst": {
+    "gemeenteraad": {
+      "N-VA": 16.0,
+      "Vlaams Belang": 7.0682,
+      "CD&V": 4.3,
+      "Groen": 4.0,
+      "Open VLD": 4.0,
+      "Onafhankelijk": 3.1548,
+      "LijstA": 2.0,
+      "Vooruit": 1.3398,
+      "SP.a": 1.1182
+    },
+    "schepencollege": {
+      "N-VA": 6.0,
+      "Open VLD": 1.0,
+      "Onafhankelijk": 0.8405,
+      "CD&V": 0.4265
+    }
+  },
+  "Aalter": {
+    "gemeenteraad": {
+      "CD&V/N-VA": 20.0,
+      "Groen": 6.0024,
+      "Open Vld Plus": 2.0,
+      "VLAAMS BELANG": 1.0
+    },
+    "schepencollege": {
+      "CD&V/N-VA": 9.1395
+    }
+  },
+  "Aarschot": {
+    "gemeenteraad": {
+      "Open Vld": 9.9899,
+      "CD&V": 6.9989,
+      "Vooruit": 3.9664,
+      "Groen": 3.453,
+      "N-VA": 3.0,
+      "VLAAMS BELANG": 2.0
+    },
+    "schepencollege": {
+      "Open Vld": 4.2584,
+      "Vooruit": 1.9653,
+      "N-VA": 1.0
+    }
+  },
+  "Aartselaar": {
+    "gemeenteraad": {
+      "N-VA": 12.4392,
+      "Onafhankelijk": 5.0,
+      "Samen NAP": 3.0,
+      "Open Vld": 2.0059,
+      "Groen": 1.0
+    },
+    "schepencollege": {
+      "N-VA": 5.0,
+      "Onafhankelijk": 1.0
+    }
+  },
+  "Affligem": {
+    "gemeenteraad": {
+      "LIJST BURGEMEESTER": 10.0,
+      "N-VA": 6.0,
+      "OPEN2040": 6.0,
+      "GROEN": 1.0007
+    },
+    "schepencollege": {
+      "LIJST BURGEMEESTER": 4.0,
+      "OPEN2040": 2.0
+    }
+  },
+  "Alken": {
+    "gemeenteraad": {
+      "N-VA": 11.0,
+      "Open Vld": 6.0008,
+      "Groen": 3.0008,
+      "CD&V": 1.0
+    },
+    "schepencollege": {
+      "N-VA": 4.1518,
+      "Groen": 1.8482
+    }
+  },
+  "Alveringem": {
+    "gemeenteraad": {
+      "GEMEENTEBELANGENCD&V": 10.0007,
+      "PRO & N-VA": 7.1609
+    },
+    "schepencollege": {
+      "GEMEENTEBELANGENCD&V": 5.0
+    }
+  },
+  "Antwerpen": {
+    "gemeenteraad": {
+      "N-VA": 23.9971,
+      "Groen": 11.2042,
+      "Vooruit": 6.001,
+      "VLAAMS BELANG": 6.0,
+      "PVDA": 3.0,
+      "CD&V": 2.0,
+      "Open VLD": 1.5694,
+      "Onafhankelijk": 1.4306
+    },
+    "schepencollege": {
+      "N-VA": 5.9807,
+      "Vooruit": 3.001,
+      "Open VLD": 0.5694,
+      "Onafhankelijk": 0.4306
+    }
+  },
+  "Anzegem": {
+    "gemeenteraad": {
+      "Samen één": 11.0033,
+      "CD&V-EENDRACHT": 7.0,
+      "INZET": 5.0,
+      "N-VA": 1.0
+    },
+    "schepencollege": {
+      "Samen één": 4.0011,
+      "INZET": 2.0
+    }
+  },
+  "Ardooie": {
+    "gemeenteraad": {
+      "GROEP 82": 13.9901,
+      "SAMENPLUS": 4.0014,
+      "Onafhankelijk": 1.0
+    },
+    "schepencollege": {
+      "GROEP 82": 5.2656
+    }
+  },
+  "Arendonk": {
+    "gemeenteraad": {
+      "N-VA": 9.9522,
+      "iedereen 2370": 6.0006,
+      "Vooruit - Groen": 3.0006,
+      "Arendonk Positief": 2.0,
+      "VLAAMS BELANG": 2.0,
+      "Onafhankelijk": 0.1007
+    },
+    "schepencollege": {
+      "N-VA": 4.0529,
+      "iedereen 2370": 2.0593
+    }
+  },
+  "As": {
+    "gemeenteraad": {
+      "VOLUIT!": 11.0,
+      "CD&V": 4.0029,
+      "sp.a": 2.0029,
+      "N-VA": 2.0
+    },
+    "schepencollege": {
+      "VOLUIT!": 5.0
+    }
+  },
+  "Asse": {
+    "gemeenteraad": {
+      "CD&V": 10.0,
+      "N-VA": 8.0,
+      "ANDERS": 5.0,
+      "ZELLIKRELEGEM-VOLK": 4.0,
+      "Groen": 3.0,
+      "VLAAMS BELANG": 0.9907
+    },
+    "schepencollege": {
+      "CD&V": 4.0,
+      "N-VA": 3.4935
+    }
+  },
+  "Assenede": {
+    "gemeenteraad": {
+      "SamenPlus": 13.0,
+      "Anders": 7.8269,
+      "Vlaams Belang": 2.0005,
+      "Onafhankelijk": 0.1665
+    },
+    "schepencollege": {
+      "SamenPlus": 6.5
+    }
+  },
+  "Avelgem": {
+    "gemeenteraad": {
+      "gbA-GEMEENTEBELANGEN": 8.0,
+      "Tandem": 6.0012,
+      "CD&V": 6.0006,
+      "N-VA": 1.0
+    },
+    "schepencollege": {
+      "Tandem": 3.0006,
+      "gbA-GEMEENTEBELANGEN": 2.9994
+    }
+  },
+  "Baarle-Hertog": {
+    "gemeenteraad": {
+      "N-VA": 4.0018,
+      "CDK": 4.0,
+      "FORUM+": 3.3447
+    },
+    "schepencollege": {
+      "N-VA": 2.0006,
+      "FORUM+": 2.0
+    }
+  },
+  "Balen": {
+    "gemeenteraad": {
+      "CD&V": 12.0,
+      "N-VA": 6.0,
+      "sp.a Balen 2025": 3.0005,
+      "Onafhankelijk": 2.6786,
+      "VLAAMS BELANG": 2.3224,
+      "Open Vld Plus": 1.0
+    },
+    "schepencollege": {
+      "CD&V": 5.0,
+      "sp.a Balen 2025": 2.0005
+    }
+  },
+  "Beernem": {
+    "gemeenteraad": {
+      "CD&V Beernem": 11.0006,
+      "N-VA": 9.0255,
+      "GROEN": 3.0,
+      "CD&V": 1.0,
+      "sp.a": 1.0
+    },
+    "schepencollege": {
+      "CD&V Beernem": 3.0,
+      "CD&V": 1.0,
+      "GROEN": 1.0,
+      "sp.a": 1.0
+    }
+  },
+  "Beerse": {
+    "gemeenteraad": {
+      "CDE-Vlim.be": 9.9953,
+      "N-VA": 6.864,
+      "BEERSEplus": 3.0,
+      "Vlaams Belang": 2.3455,
+      "Groen-Hart v. Beerse": 2.0005,
+      "onafhankelijk": 0.5091,
+      "Onafhankelijk": 0.2813
+    },
+    "schepencollege": {
+      "CDE-Vlim.be": 4.4941,
+      "BEERSEplus": 1.5012
+    }
+  },
+  "Beersel": {
+    "gemeenteraad": {
+      "Lijst BURGEMEESTER": 8.0,
+      "N-VA": 6.0011,
+      "WijZijnBeersel": 5.0011,
+      "union francophone": 5.0011,
+      "Onafhankelijk": 1.9061,
+      "Blauw beersel": 1.067,
+      "VLAAMS BELANG": 1.0
+    },
+    "schepencollege": {
+      "Lijst BURGEMEESTER": 4.4372,
+      "N-VA": 1.5506,
+      "Blauw beersel": 1.0401,
+      "Onafhankelijk": 1.0206
+    }
+  },
+  "Begijnendijk": {
+    "gemeenteraad": {
+      "MGB": 9.0,
+      "samen": 6.0006,
+      "LEEF": 2.0,
+      "N-VA": 2.0,
+      "S.A.F.E.": 2.0
+    },
+    "schepencollege": {
+      "samen": 2.8149,
+      "LEEF": 1.0,
+      "N-VA": 1.0,
+      "S.A.F.E.": 1.0
+    }
+  },
+  "Bekkevoort": {
+    "gemeenteraad": {
+      "CD&V": 7.0,
+      "ONS DORP": 6.0014,
+      "N-VA": 2.0,
+      "GBL": 1.0,
+      "Open Vld": 0.6219,
+      "Onafhankelijk": 0.3788
+    },
+    "schepencollege": {
+      "ONS DORP": 3.0,
+      "CD&V": 2.0
+    }
+  },
+  "Beringen": {
+    "gemeenteraad": {
+      "Vooruit": 9.001,
+      "CD&V": 9.0,
+      "N-VA": 6.0,
+      "VOLUIT": 5.0274,
+      "VLAAMS BELANG": 2.8581,
+      "Groen": 1.9188,
+      "Onafhankelijk": 1.0548
+    },
+    "schepencollege": {
+      "CD&V": 4.0,
+      "N-VA": 2.0,
+      "VOLUIT": 2.0
+    }
+  },
+  "Berlaar": {
+    "gemeenteraad": {
+      "CD&V": 8.0,
+      "N-VA": 4.0026,
+      "kartel BHG": 3.2216,
+      "Groen": 2.0009,
+      "Vlaams Belang": 2.0009,
+      "Onafhankelijk": 1.0009,
+      "Kartel BHG": 0.7793
+    },
+    "schepencollege": {
+      "CD&V": 4.0,
+      "N-VA": 1.0009,
+      "Onafhankelijk": 1.0009
+    }
+  },
+  "Berlare": {
+    "gemeenteraad": {
+      "Open Vld": 12.0,
+      "CD&V": 6.0,
+      "N-VA": 2.0,
+      "Vooruit en Groen": 1.2157,
+      "VLAAMS BELANG": 1.0006,
+      "Gemeentebelangen": 1.0
+    },
+    "schepencollege": {
+      "Open Vld": 5.0,
+      "N-VA": 1.0
+    }
+  },
+  "Bertem": {
+    "gemeenteraad": {
+      "GEMBELANGEN OPEN VLD": 8.0,
+      "CD&V": 6.0,
+      "GROEN": 2.3813,
+      "N-VA": 2.0,
+      "Onafhankelijk": 1.0,
+      "Vooruit": 0.8607,
+      "sp.a": 0.758
+    },
+    "schepencollege": {
+      "GEMBELANGEN OPEN VLD": 3.0,
+      "CD&V": 2.0
+    }
+  },
+  "Bever": {
+    "gemeenteraad": {
+      "Thuis in Bever": 6.0,
+      "OPEN VOOR DE MENS": 4.7979
+    },
+    "schepencollege": {
+      "Thuis in Bever": 3.9869
+    }
+  },
+  "Beveren": {
+    "gemeenteraad": {
+      "CD&V Beveren": 12.7987,
+      "N-VA": 10.7842,
+      "Groen": 2.7994,
+      "Beveren 2020": 1.958,
+      "Onafhankelijken": 1.958,
+      "VLAAMS BELANG": 1.958,
+      "Vooruit": 1.958,
+      "Open Vld": 0.979,
+      "Groen-sp.a Beveren": 0.2744
+    },
+    "schepencollege": {
+      "CD&V Beveren": 4.803,
+      "N-VA": 3.2064
+    }
+  },
+  "Bierbeek": {
+    "gemeenteraad": {
+      "CD&V": 8.001,
+      "sp.a Groen": 5.5459,
+      "Open Bierbeek": 5.001,
+      "N-VA": 3.001
+    },
+    "schepencollege": {
+      "CD&V": 4.0,
+      "sp.a Groen": 2.0
+    }
+  },
+  "Blankenberge": {
+    "gemeenteraad": {
+      "Open Vld": 8.9961,
+      "N-VA": 6.4364,
+      "Vooruit": 5.9971,
+      "CD&V2030": 2.9995,
+      "Vlaams Belang": 1.999,
+      "Onafhankelijk": 0.5475
+    },
+    "schepencollege": {
+      "Vooruit": 2.5851,
+      "Open Vld": 2.2862,
+      "N-VA": 1.6595,
+      "CD&V2030": 0.4149
+    }
+  },
+  "Bocholt": {
+    "gemeenteraad": {
+      "Via": 9.0019,
+      "NU - Nieuwe Unie": 5.0013,
+      "N-VA": 3.9673,
+      "SAMEN": 3.0006,
+      "BOCHOLT BELEEFT": 1.0,
+      "Onafhankelijk": 1.0
+    },
+    "schepencollege": {
+      "Via": 4.0,
+      "SAMEN": 1.0,
+      "N-VA": 0.9666
+    }
+  },
+  "Boechout": {
+    "gemeenteraad": {
+      "PRO Boechout&Vremde": 10.0,
+      "N-VA": 5.0,
+      "'t Dorp": 2.8571,
+      "CD&V": 2.0,
+      "Groen-gangmaker": 2.0,
+      "Vlaams Belang": 1.0,
+      "Onafhankelijk": 0.1429
+    },
+    "schepencollege": {
+      "PRO Boechout&Vremde": 4.0,
+      "CD&V": 1.0,
+      "Groen-gangmaker": 1.0
+    }
+  },
+  "Bonheiden": {
+    "gemeenteraad": {
+      "N-VA": 6.0016,
+      "BR30": 6.0,
+      "Groen": 4.0016,
+      "CD&V": 4.0,
+      "Open VLD": 2.0016,
+      "Onafhankelijk": 1.0
+    },
+    "schepencollege": {
+      "CD&V": 2.5241,
+      "BR30": 2.4759,
+      "Open VLD": 1.0
+    }
+  },
+  "Boom": {
+    "gemeenteraad": {
+      "N-VA": 10.0023,
+      "BOOM één": 7.0,
+      "CD&V": 4.0023,
+      "VLAAMS BELANG": 3.0023,
+      "Groen": 1.0
+    },
+    "schepencollege": {
+      "N-VA": 3.0,
+      "CD&V": 2.0,
+      "Groen": 1.0
+    }
+  },
+  "Boortmeerbeek": {
+    "gemeenteraad": {
+      "Open VLD": 8.8108,
+      "Onafhankelijk": 3.1487,
+      "CD&V": 3.038,
+      "Groen": 3.0,
+      "N-VA": 2.9747,
+      "Vlaams Belang": 1.0,
+      "Vooruit": 0.708,
+      "SP.a": 0.292
+    },
+    "schepencollege": {
+      "Open VLD": 3.9141,
+      "Onafhankelijk": 1.0443,
+      "N-VA": 0.6052,
+      "SP.a": 0.3954,
+      "Vooruit": 0.1033
+    }
+  },
+  "Borgloon": {
+    "gemeenteraad": {
+      "Open VLD Stroop": 8.3475,
+      "sp.a": 7.4225,
+      "CD&V": 1.855,
+      "N-VA": 1.855
+    },
+    "schepencollege": {
+      "Open VLD Stroop": 3.995,
+      "sp.a": 1.995
+    }
+  },
+  "Bornem": {
+    "gemeenteraad": {
+      "CD&V": 9.9537,
+      "Vooruit & Open VLD": 8.0,
+      "N-VA": 4.1004,
+      "Vlaams Belang": 3.002,
+      "Onafhankelijk": 2.0817,
+      "Iedereen Bornem": 0.0098
+    },
+    "schepencollege": {
+      "CD&V": 3.8898,
+      "N-VA": 2.9203,
+      "Onafhankelijk": 0.0817,
+      "Iedereen Bornem": 0.0049
+    }
+  },
+  "Borsbeek": {
+    "gemeenteraad": {
+      "Iedereen Borsbeek": 10.0,
+      "N-VA": 8.9053,
+      "Vlaams Belang": 2.0,
+      "Onafhankelijk": 1.0
+    },
+    "schepencollege": {
+      "N-VA": 3.9895,
+      "Iedereen Borsbeek": 2.0
+    }
+  },
+  "Boutersem": {
+    "gemeenteraad": {
+      "CD&V": 6.0,
+      "Vooruit": 4.9776,
+      "N-VA": 4.0011,
+      "Groen": 3.0011,
+      "Open Vld": 2.0
+    },
+    "schepencollege": {
+      "CD&V": 2.972,
+      "N-VA": 1.0,
+      "Open Vld": 1.0
+    }
+  },
+  "Brakel": {
+    "gemeenteraad": {
+      "Open Vld": 15.3992,
+      "CD&V": 3.0006,
+      "sp.a": 3.0006,
+      "N-VA": 1.0,
+      "Vlaams Belang": 1.0
+    },
+    "schepencollege": {
+      "Open Vld": 7.0
+    }
+  },
+  "Brasschaat": {
+    "gemeenteraad": {
+      "N-VA": 18.0431,
+      "CD&V": 6.5979,
+      "Brasschaat 2012": 4.0021,
+      "Vlaams Belang": 3.0,
+      "Open VLD": 2.1584,
+      "PVDA": 1.0
+    },
+    "schepencollege": {
+      "N-VA": 8.906,
+      "Open VLD": 1.0
+    }
+  },
+  "Brecht": {
+    "gemeenteraad": {
+      "N-VA": 11.5,
+      "CD&V - CDB": 9.1667,
+      "Vlaams Belang": 3.0,
+      "Open VLD": 2.0,
+      "CD&V-CDB": 1.0,
+      "Groen": 1.0,
+      "Onafhankelijk": 1.0,
+      "Oprecht Brecht": 1.0
+    },
+    "schepencollege": {
+      "N-VA": 4.0,
+      "CD&V - CDB": 3.0
+    }
+  },
+  "Bredene": {
+    "gemeenteraad": {
+      "Vooruit": 14.3018,
+      "N_VA/Open Vld": 2.9074,
+      "CD&V": 2.001,
+      "Vlaams Belang": 2.0,
+      "Onafhankelijk": 1.9402,
+      "Groen": 1.001,
+      "sp.a": 0.703
+    },
+    "schepencollege": {
+      "Vooruit": 4.9981,
+      "CD&V": 1.0
+    }
+  },
+  "Bree": {
+    "gemeenteraad": {
+      "Verjonging": 7.8184,
+      "N-VA": 7.0012,
+      "onsBree": 7.0,
+      "BBB": 1.0,
+      "Vernieuwing": 1.0,
+      "Vooruit": 0.6953,
+      "onafhankelijk": 0.2724
+    },
+    "schepencollege": {
+      "N-VA": 3.0,
+      "onsBree": 3.0
+    }
+  },
+  "Brugge": {
+    "gemeenteraad": {
+      "CD&V": 17.0,
+      "Vooruit Brugge": 9.9806,
+      "Open VLD Plus": 6.0006,
+      "Groen": 5.1366,
+      "N-VA": 4.9834,
+      "Vlaams Belang": 4.0
+    },
+    "schepencollege": {
+      "CD&V": 5.0,
+      "Vooruit Brugge": 4.0,
+      "Open VLD Plus": 2.0006
+    }
+  },
+  "Buggenhout": {
+    "gemeenteraad": {
+      "CD&V": 13.0007,
+      "N-VA": 5.0007,
+      "VLAAMS BELANG": 4.0,
+      "Open Vld": 1.0
+    },
+    "schepencollege": {
+      "CD&V": 6.0
+    }
+  },
+  "Damme": {
+    "gemeenteraad": {
+      "CD&V+": 15.9867,
+      "N-VA": 3.0,
+      "de Damse belangen": 2.0,
+      "Onafhankelijk": 0.0006
+    },
+    "schepencollege": {
+      "CD&V+": 6.0
+    }
+  },
+  "De Haan": {
+    "gemeenteraad": {
+      "Lijst burgemeester": 10.0005,
+      "bewust": 10.0,
+      "Samen Vooruit!": 2.0,
+      "Groen": 1.0
+    },
+    "schepencollege": {
+      "Lijst burgemeester": 5.0,
+      "Samen Vooruit!": 1.0
+    }
+  },
+  "De Panne": {
+    "gemeenteraad": {
+      "Lijst Burgemeester": 8.0017,
+      "ACTIE": 6.0,
+      "HET PLAN - B": 4.0009,
+      "Onafhankelijk": 2.0009,
+      "N-VA": 1.0
+    },
+    "schepencollege": {
+      "ACTIE": 3.0,
+      "HET PLAN - B": 2.0,
+      "N-VA": 1.0
+    }
+  },
+  "De Pinte": {
+    "gemeenteraad": {
+      "CD&V": 10.0017,
+      "Ruimte": 5.6537,
+      "N-VA": 3.0,
+      "Open VLD": 2.0,
+      "Onafhankelijk": 0.3468
+    },
+    "schepencollege": {
+      "CD&V": 4.8435,
+      "N-VA": 2.0
+    }
+  },
+  "Deerlijk": {
+    "gemeenteraad": {
+      "CD&V": 9.001,
+      "Open VLD": 5.9424,
+      "Deerlijk2": 2.0,
+      "Onafhankelijk": 2.0,
+      "N-VA": 1.0
+    },
+    "schepencollege": {
+      "CD&V": 3.0,
+      "Open VLD": 3.0
+    }
+  },
+  "Deinze": {
+    "gemeenteraad": {
+      "CD&V": 14.0,
+      "OPEN DEINZE": 8.0,
+      "N-VA": 6.5938,
+      "GroenRood": 4.5216,
+      "Vlaams Belang": 2.0,
+      "Vooruit": 1.0
+    },
+    "schepencollege": {
+      "CD&V": 7.0,
+      "OPEN DEINZE": 4.0
+    }
+  },
+  "Denderleeuw": {
+    "gemeenteraad": {
+      "Vlaams Belang": 9.0005,
+      "LVB": 6.977,
+      "CD&V": 4.8842,
+      "N-VA": 2.9848,
+      "Groen": 2.0,
+      "Onafhankelijk": 0.9827,
+      "Plus": 0.3944
+    },
+    "schepencollege": {
+      "LVB": 3.0,
+      "CD&V": 2.8848,
+      "Groen": 1.0,
+      "Onafhankelijk": 0.1158
+    }
+  },
+  "Dendermonde": {
+    "gemeenteraad": {
+      "CD&V": 12.0,
+      "N-VA": 9.0,
+      "Vlaams Belang": 5.0,
+      "Vooruit": 5.0,
+      "Open VLD": 4.0,
+      "Groen": 1.0,
+      "sp.a-Groen": 0.4066
+    },
+    "schepencollege": {
+      "CD&V": 5.0,
+      "N-VA": 3.0
+    }
+  },
+  "Dentergem": {
+    "gemeenteraad": {
+      "EENDRACHT": 12.0024,
+      "FOCUS8720": 7.0012
+    },
+    "schepencollege": {
+      "EENDRACHT": 5.0
+    }
+  },
+  "Dessel": {
+    "gemeenteraad": {
+      "N-VA": 11.0,
+      "D&W": 7.6712,
+      "CD&V": 3.0
+    },
+    "schepencollege": {
+      "N-VA": 5.0
+    }
+  },
+  "Destelbergen": {
+    "gemeenteraad": {
+      "Open Vld": 8.0005,
+      "N-VA": 6.0005,
+      "CD&V": 5.0,
+      "Sp.a": 2.8004,
+      "Groen": 2.2006,
+      "Vlaams Belang": 1.0
+    },
+    "schepencollege": {
+      "N-VA": 3.0005,
+      "Open Vld": 3.0
+    }
+  },
+  "Diepenbeek": {
+    "gemeenteraad": {
+      "PUUR Diepenbeek": 8.96,
+      "N-VA": 6.0006,
+      "CD&V": 3.0,
+      "Open VLD": 2.1776,
+      "Groen": 1.9857,
+      "Onafhankelijk": 1.8629,
+      "Pro3590": 1.0
+    },
+    "schepencollege": {
+      "CD&V": 2.0,
+      "N-VA": 1.9931,
+      "Groen": 1.0,
+      "Onafhankelijk": 0.6071,
+      "Open VLD": 0.3929
+    }
+  },
+  "Diest": {
+    "gemeenteraad": {
+      "Open Diest": 9.0,
+      "DDS": 8.0013,
+      "sp.a": 5.0,
+      "N-VA": 3.0,
+      "Groen": 1.9093,
+      "Vlaams Belang": 1.0,
+      "Onafhankelijk": 0.0907
+    },
+    "schepencollege": {
+      "Open Diest": 4.0,
+      "DDS": 3.0
+    }
+  },
+  "Diksmuide": {
+    "gemeenteraad": {
+      "CD&V": 7.0,
+      "N-VA": 6.0,
+      "Idee Diksmuide": 5.9766,
+      "sp.a-open": 3.0007,
+      "Groen": 1.1662,
+      "Onafhankelijk": 1.0,
+      "VLAAMS BELANG": 1.0
+    },
+    "schepencollege": {
+      "CD&V": 4.0,
+      "Idee Diksmuide": 1.9766
+    }
+  },
+  "Dilbeek": {
+    "gemeenteraad": {
+      "LVBurger Open-VLD": 11.0027,
+      "N-VA LvBurgemeester": 9.0,
+      "CD&V": 5.0,
+      "UF=MR+DÉFI+IND": 3.0,
+      "VLAAMS BELANG": 2.0027,
+      "DNA!": 2.0,
+      "Groen-sp.a": 2.0,
+      "Onafhankelijk": 2.0
+    },
+    "schepencollege": {
+      "LVBurger Open-VLD": 4.0,
+      "N-VA LvBurgemeester": 4.0
+    }
+  },
+  "Dilsen-Stokkem": {
+    "gemeenteraad": {
+      "Open Vld": 10.0,
+      "VOORUIT DILS-STOK": 7.0,
+      "CD&V": 6.0,
+      "N-VA": 3.0015,
+      "Voor U": 1.0
+    },
+    "schepencollege": {
+      "Open Vld": 4.9947,
+      "VOORUIT DILS-STOK": 3.0008
+    }
+  },
+  "Drogenbos": {
+    "gemeenteraad": {
+      "Drogenbos Plus": 10.0,
+      "UF": 7.0,
+      "go1620": 2.0,
+      "DROGENBOS PLUS - LB": 1.0
+    },
+    "schepencollege": {
+      "Drogenbos Plus": 4.0,
+      "UF": 1.0
+    }
+  },
+  "Duffel": {
+    "gemeenteraad": {
+      "N-VA": 10.0017,
+      "CD&V": 6.0009,
+      "Groen": 6.0009,
+      "Vlaams Belang": 2.0009,
+      "Open VLD": 1.0
+    },
+    "schepencollege": {
+      "CD&V": 3.0009,
+      "N-VA": 3.0
+    }
+  },
+  "Edegem": {
+    "gemeenteraad": {
+      "N-VA": 18.0015,
+      "Groen": 5.8427,
+      "CD&V": 3.1806,
+      "Open Vld": 1.0
+    },
+    "schepencollege": {
+      "N-VA": 6.0022
+    }
+  },
+  "Eeklo": {
+    "gemeenteraad": {
+      "CD&V": 6.0,
+      "N-VA": 5.2308,
+      "SMS EEKLO": 5.0023,
+      "Onafhankelijk": 4.0,
+      "Open Vld": 4.0,
+      "Groen": 2.0181,
+      "Vlaams Belang": 1.0
+    },
+    "schepencollege": {
+      "SMS EEKLO": 3.0,
+      "CD&V": 2.0,
+      "N-VA": 2.0
+    }
+  },
+  "Erpe-Mere": {
+    "gemeenteraad": {
+      "CD&V": 12.0005,
+      "N-VA": 5.0,
+      "VLAAMS BELANG": 3.0,
+      "Vooruit-Groen": 2.0,
+      "LEF": 1.0,
+      "Open Vld": 1.0,
+      "Sterk!": 1.0
+    },
+    "schepencollege": {
+      "CD&V": 4.0,
+      "N-VA": 2.0
+    }
+  },
+  "Essen": {
+    "gemeenteraad": {
+      "N-VA/PLE": 10.0131,
+      "CD&V ESSEN": 9.1031,
+      "sp.a-JijmaaktEssen": 4.0005,
+      "VLAAMS BELANG": 1.2677
+    },
+    "schepencollege": {
+      "CD&V ESSEN": 4.0,
+      "sp.a-JijmaaktEssen": 2.0
+    }
+  },
+  "Evergem": {
+    "gemeenteraad": {
+      "N-VA": 14.0,
+      "CD&V": 9.0,
+      "Vlaams Belang": 3.001,
+      "#sterk!": 3.0,
+      "Groen": 3.0,
+      "Onafhankelijk": 1.0
+    },
+    "schepencollege": {
+      "N-VA": 4.5549,
+      "CD&V": 3.4451
+    }
+  },
+  "Galmaarden": {
+    "gemeenteraad": {
+      "CD&V": 11.0,
+      "N-VA": 5.8166,
+      "GB.G": 1.0,
+      "Vlaams Belang": 1.0,
+      "Onafhankelijk": 0.1842
+    },
+    "schepencollege": {
+      "CD&V": 5.0
+    }
+  },
+  "Gavere": {
+    "gemeenteraad": {
+      "Gavere durft/N-VA": 10.0005,
+      "Open Vld -VOG": 9.0,
+      "CD&V": 2.0,
+      "Groen": 2.0,
+      "Vooruit": 0.7148,
+      "sp.a": 0.2852
+    },
+    "schepencollege": {
+      "Open Vld -VOG": 4.0,
+      "CD&V": 1.0,
+      "Vooruit": 1.0
+    }
+  },
+  "Geel": {
+    "gemeenteraad": {
+      "CD&V": 10.0,
+      "N-VA": 10.0,
+      "De Brugpartij": 5.001,
+      "Vlaams Belang": 4.0,
+      "DURF": 2.001,
+      "Onafhankelijk": 1.0,
+      "PVDA": 1.0
+    },
+    "schepencollege": {
+      "N-VA": 4.0,
+      "CD&V": 3.9995
+    }
+  },
+  "Geetbets": {
+    "gemeenteraad": {
+      "Open-Vld": 9.9995,
+      "Hart Dorp": 3.0,
+      "CD&V": 2.9995,
+      "N-VA": 1.0
+    },
+    "schepencollege": {
+      "Open-Vld": 4.0,
+      "Hart Dorp": 1.0
+    }
+  },
+  "Genk": {
+    "gemeenteraad": {
+      "CD&V": 18.007,
+      "N-VA": 12.0,
+      "Vooruit": 4.0,
+      "VLAAMS BELANG": 3.0,
+      "PROgenk": 1.0,
+      "PVDA+": 1.0
+    },
+    "schepencollege": {
+      "CD&V": 7.0,
+      "Vooruit": 2.0
+    }
+  },
+  "Gent": {
+    "gemeenteraad": {
+      "Open-Vld": 14.001,
+      "Groen": 13.8289,
+      "Vooruit": 7.1864,
+      "N-VA": 7.001,
+      "Vlaams-Belang": 4.001,
+      "CD&V": 3.0,
+      "PVDA": 3.0,
+      "Onafhankelijk": 2.001
+    },
+    "schepencollege": {
+      "Groen": 5.944,
+      "Open-Vld": 3.0,
+      "Vooruit": 2.0,
+      "CD&V": 0.057
+    }
+  },
+  "Geraardsbergen": {
+    "gemeenteraad": {
+      "Open VLD": 12.0,
+      "CD&V": 9.0,
+      "sp.a": 4.3594,
+      "N-VA": 2.3917,
+      "Het Alternatief": 1.0,
+      "Onafhankelijk": 1.0,
+      "VLAAMS BELANG": 1.0,
+      "Vlaams Belang": 1.0
+    },
+    "schepencollege": {
+      "Open VLD": 5.0,
+      "CD&V": 3.0
+    }
+  },
+  "Gingelom": {
+    "gemeenteraad": {
+      "Vooruit - Goesting": 11.7377,
+      "LEEF": 4.0,
+      "CD&V": 2.0011,
+      "N-VA": 1.0,
+      "Onafhankelijk": 0.248
+    },
+    "schepencollege": {
+      "Vooruit - Goesting": 4.9994
+    }
+  },
+  "Gistel": {
+    "gemeenteraad": {
+      "Open Vld": 10.0022,
+      "CD&V": 7.0011,
+      "N-VA": 2.0,
+      "Vooruit": 2.0,
+      "Groen": 1.0218,
+      "Vlaams Belang": 1.0
+    },
+    "schepencollege": {
+      "Open Vld": 4.0022,
+      "N-VA": 1.0,
+      "Vooruit": 1.0
+    }
+  },
+  "Glabbeek": {
+    "gemeenteraad": {
+      "Dorpspartij": 12.0005,
+      "CD&V": 3.0005,
+      "SamenGROEN": 2.0005
+    },
+    "schepencollege": {
+      "Dorpspartij": 5.0
+    }
+  },
+  "Gooik": {
+    "gemeenteraad": {
+      "CD&V": 15.0,
+      "N-VA": 5.0047,
+      "Onafhankelijk": 1.0
+    },
+    "schepencollege": {
+      "CD&V": 5.0
+    }
+  },
+  "Grimbergen": {
+    "gemeenteraad": {
+      "Vernieuwing": 7.0006,
+      "Groen": 6.0013,
+      "Open Vld": 5.5459,
+      "cd&v": 5.1835,
+      "N-VA": 4.0,
+      "Onafhankelijk": 1.4548,
+      "Vooruit": 1.2008,
+      "UF": 1.0,
+      "CD&V": 0.8178,
+      "sp.a": 0.7999
+    },
+    "schepencollege": {
+      "Vernieuwing": 3.0006,
+      "N-VA": 2.0,
+      "cd&v": 1.7627,
+      "Open Vld": 1.2393
+    }
+  },
+  "Grobbendonk": {
+    "gemeenteraad": {
+      "GiB": 8.1487,
+      "N-VA": 4.0006,
+      "Vooruit": 4.0006,
+      "CD&V": 1.9871,
+      "De Lokale Lijst": 1.0006,
+      "Vlaams Belang": 1.0,
+      "GIB": 0.8367
+    },
+    "schepencollege": {
+      "GiB": 4.3653,
+      "N-VA": 1.6247
+    }
+  },
+  "Haacht": {
+    "gemeenteraad": {
+      "Open VLD": 9.001,
+      "N-VA": 4.9969,
+      "Groen": 4.0682,
+      "CD&V": 3.001,
+      "sp.a": 2.0
+    },
+    "schepencollege": {
+      "Open VLD": 4.001,
+      "CD&V": 1.0,
+      "sp.a": 1.0
+    }
+  },
+  "Haaltert": {
+    "gemeenteraad": {
+      "N-VA": 7.9234,
+      "CL-VLD": 6.0,
+      "CD&V": 4.0015,
+      "Vlaams Belang": 2.2766,
+      "sp.a": 2.0,
+      "Onafhankelijk": 1.0766,
+      "Open en Liberaal": 1.0,
+      "VLAAMS BELANG": 0.7041
+    },
+    "schepencollege": {
+      "N-VA": 2.9242,
+      "CD&V": 2.0,
+      "sp.a": 1.0,
+      "Onafhankelijk": 0.0766
+    }
+  },
+  "Halen": {
+    "gemeenteraad": {
+      "CD&V": 12.987,
+      "N-VA": 3.9927,
+      "Open Vld": 3.0,
+      "Vooruit": 1.0005
+    },
+    "schepencollege": {
+      "CD&V": 4.999
+    }
+  },
+  "Halle": {
+    "gemeenteraad": {
+      "N-VA": 11.0,
+      "CD&V": 7.1738,
+      "sp.a": 7.0,
+      "Groen": 4.0,
+      "Vlaams Belang": 2.0,
+      "Halle2019": 1.0,
+      "Onafhankelijk": 1.0
+    },
+    "schepencollege": {
+      "CD&V": 3.0,
+      "sp.a": 3.0,
+      "Groen": 2.0009
+    }
+  },
+  "Hamme": {
+    "gemeenteraad": {
+      "CD&V Hamme Moerzeke": 8.0019,
+      "N-VA": 5.0019,
+      "Open VLD": 3.8177,
+      "Vooruit": 3.0019,
+      "Vlaams Belang": 3.0,
+      "Groen": 2.4808,
+      "Onafhankelijk": 2.0566
+    },
+    "schepencollege": {
+      "CD&V Hamme Moerzeke": 4.1036,
+      "N-VA": 2.0,
+      "Vooruit": 1.0
+    }
+  },
+  "Hamont-Achel": {
+    "gemeenteraad": {
+      "PRO HAMONT-ACHEL": 10.001,
+      "CD&V": 10.0,
+      "N-VA": 1.001,
+      "BALANS": 1.0,
+      "Onafhankelijk": 1.0
+    },
+    "schepencollege": {
+      "CD&V": 3.5948,
+      "Onafhankelijk": 1.9198,
+      "BALANS": 0.9198,
+      "PRO HAMONT-ACHEL": 0.325,
+      "N-VA": 0.0823
+    }
+  },
+  "Harelbeke": {
+    "gemeenteraad": {
+      "Vooruit-Groen": 11.0096,
+      "CD&V": 7.1212,
+      "Open VLD+": 5.0015,
+      "N-VA": 2.5809,
+      "Vlaams Belang": 2.0,
+      "Onafhankelijk": 1.4279,
+      "sp.a/Groen": 0.0081
+    },
+    "schepencollege": {
+      "Vooruit-Groen": 4.0,
+      "CD&V": 3.1094,
+      "sp.a/Groen": 0.003
+    }
+  },
+  "Hasselt": {
+    "gemeenteraad": {
+      "N-VA": 12.0,
+      "RoodGroen+Hasselt": 11.0,
+      "CD&V": 9.0,
+      "Open VLD": 4.0,
+      "Vlaams Belang": 3.0,
+      "PVDA": 2.0
+    },
+    "schepencollege": {
+      "RoodGroen+Hasselt": 3.5065,
+      "N-VA": 3.4935,
+      "Open VLD": 2.0
+    }
+  },
+  "Hechtel-Eksel": {
+    "gemeenteraad": {
+      "HE lijst burgemeestr": 15.5241,
+      "CD&V": 3.9531,
+      "Onafhankelijk": 1.478,
+      "Groen": 1.0,
+      "sp.a": 1.0
+    },
+    "schepencollege": {
+      "HE lijst burgemeestr": 5.9794,
+      "Onafhankelijk": 0.0206
+    }
+  },
+  "Heers": {
+    "gemeenteraad": {
+      "VLDUMONT": 11.1355,
+      "CD&V": 3.0018,
+      "N-VA": 2.1147,
+      "Hecht": 2.0,
+      "Onafhankelijk": 0.8862
+    },
+    "schepencollege": {
+      "VLDUMONT": 5.0018
+    }
+  },
+  "Heist-op-den-Berg": {
+    "gemeenteraad": {
+      "CD&V": 10.0,
+      "N-VA": 10.0,
+      "PRO Heist": 4.0,
+      "Vlaams Belang": 4.0,
+      "Open VLD": 3.0,
+      "Groen": 2.0,
+      "eta+": 1.0204,
+      "Onafhankelijk": 1.0
+    },
+    "schepencollege": {
+      "CD&V": 3.0,
+      "N-VA": 2.0,
+      "Groen": 1.0,
+      "Open VLD": 1.0,
+      "PRO Heist": 1.0
+    }
+  },
+  "Hemiksem": {
+    "gemeenteraad": {
+      "CD&V-groen": 9.0,
+      "N-VA": 4.0012,
+      "Vooruit soc beweging": 3.0,
+      "Hemiksem vooruit": 2.0,
+      "Vlaams Belang": 2.0,
+      "open vld": 1.0
+    },
+    "schepencollege": {
+      "CD&V-groen": 5.0006,
+      "Vooruit soc beweging": 1.0006
+    }
+  },
+  "Herent": {
+    "gemeenteraad": {
+      "Groen": 6.4895,
+      "CD&V": 6.0,
+      "NV-A": 5.6294,
+      "Open VLD": 3.0,
+      "SPa": 3.0,
+      "Herent 21": 1.5748,
+      "Onafhankelijk": 0.8014,
+      "N-VA": 0.0615
+    },
+    "schepencollege": {
+      "CD&V": 3.0,
+      "NV-A": 2.6294,
+      "Open VLD": 1.0,
+      "Onafhankelijk": 0.3706
+    }
+  },
+  "Herentals": {
+    "gemeenteraad": {
+      "N-VA": 9.0,
+      "CD&V": 7.1403,
+      "Vooruit": 7.0,
+      "Groen": 3.0,
+      "Vlaams Belang": 3.0,
+      "Stadslijst": 1.0
+    },
+    "schepencollege": {
+      "CD&V": 4.0,
+      "N-VA": 3.0
+    }
+  },
+  "Herenthout": {
+    "gemeenteraad": {
+      "Eenheid - N-VA": 8.001,
+      "GBL": 6.0031,
+      "CD&V": 3.0,
+      "S.A.M.E.N.": 2.0
+    },
+    "schepencollege": {
+      "Eenheid - N-VA": 4.0005,
+      "CD&V": 1.0
+    }
+  },
+  "Herk-de-Stad": {
+    "gemeenteraad": {
+      "Vooruit": 6.0,
+      "CD&V": 5.082,
+      "Open Vld": 5.0007,
+      "N-VA": 4.0,
+      "Groen": 1.0,
+      "NIEUW": 1.0,
+      "Onafhankelijke": 1.0,
+      "sp.a": 0.0044
+    },
+    "schepencollege": {
+      "CD&V": 2.0,
+      "Open Vld": 2.0,
+      "Vooruit": 2.0,
+      "sp.a": 0.0015
+    }
+  },
+  "Herne": {
+    "gemeenteraad": {
+      "CD&V": 13.9942,
+      "Kwadrantplus": 3.0
+    },
+    "schepencollege": {
+      "CD&V": 4.9603
+    }
+  },
+  "Herselt": {
+    "gemeenteraad": {
+      "CD&V+2230": 10.0031,
+      "N-VA": 8.0,
+      "MENSEN MET MENSEN": 2.0031,
+      "Onafhankelijk": 2.0,
+      "Groen Herselt": 1.0
+    },
+    "schepencollege": {
+      "N-VA": 3.0,
+      "Onafhankelijk": 2.0,
+      "MENSEN MET MENSEN": 1.0031
+    }
+  },
+  "Herstappe": {
+    "gemeenteraad": {
+      "Gemeentebelangen - Intérêts communaux": 4.5019,
+      "Herstappe+": 1.8643
+    },
+    "schepencollege": {
+      "Gemeentebelangen - Intérêts communaux": 3.6546
+    }
+  },
+  "Herzele": {
+    "gemeenteraad": {
+      "Open Vld": 13.0,
+      "CD&V en Partners": 5.0,
+      "N-VA": 2.9813,
+      "LEEF! & GROEN": 2.0,
+      "roodgroen": 2.0
+    },
+    "schepencollege": {
+      "Open Vld": 4.9995,
+      "CD&V en Partners": 1.0
+    }
+  },
+  "Heusden-Zolder": {
+    "gemeenteraad": {
+      "G|O|E|D": 11.0,
+      "Vooruit": 6.0,
+      "CD&V": 5.0005,
+      "N-VA": 4.001,
+      "VLAAMS BELANG": 3.0,
+      "Onafhankelijk": 2.0
+    },
+    "schepencollege": {
+      "G|O|E|D": 4.0,
+      "Vooruit": 1.9995,
+      "CD&V": 1.0005,
+      "Onafhankelijk": 1.0
+    }
+  },
+  "Heuvelland": {
+    "gemeenteraad": {
+      "GEMEENTEBELANGEN": 11.9773,
+      "CD&V": 4.9857,
+      "N-VA": 1.975
+    },
+    "schepencollege": {
+      "GEMEENTEBELANGEN": 5.0
+    }
+  },
+  "Hoegaarden": {
+    "gemeenteraad": {
+      "CD&V": 10.0019,
+      "N-VA": 3.0,
+      "Gewoon Wit": 2.3395,
+      "sp.a": 1.0,
+      "Gewoon WIT": 0.6245
+    },
+    "schepencollege": {
+      "CD&V": 5.001
+    }
+  },
+  "Hoeilaart": {
+    "gemeenteraad": {
+      "Open Vld": 8.0,
+      "Open VLD": 5.2143,
+      "CD&V": 5.0,
+      "PRO Hoeilaart": 4.0
+    },
+    "schepencollege": {
+      "Open VLD": 4.0,
+      "Open Vld": 2.0,
+      "PRO Hoeilaart": 1.0
+    }
+  },
+  "Hoeselt": {
+    "gemeenteraad": {
+      "VLD plus": 8.8793,
+      "BEST GROEN": 6.4389,
+      "N-VA Fusiebelang": 4.3529,
+      "TROTS": 1.9866,
+      "Onafhankelijk": 0.3478
+    },
+    "schepencollege": {
+      "VLD plus": 2.9995,
+      "N-VA Fusiebelang": 1.9995
+    }
+  },
+  "Holsbeek": {
+    "gemeenteraad": {
+      "CD&V": 9.0014,
+      "Holsbeek Beweegt": 4.0,
+      "Groen": 3.0014,
+      "N-VA": 3.0,
+      "Open Vld": 2.0
+    },
+    "schepencollege": {
+      "CD&V": 4.0029,
+      "Groen": 1.0,
+      "Open Vld": 0.0029
+    }
+  },
+  "Hooglede": {
+    "gemeenteraad": {
+      "Groep 21": 8.0,
+      "CD&V": 7.0026,
+      "Allen 8830": 6.0
+    },
+    "schepencollege": {
+      "Allen 8830": 3.2874,
+      "CD&V": 1.7117
+    }
+  },
+  "Hoogstraten": {
+    "gemeenteraad": {
+      "Hoogstraten Leeft": 10.4868,
+      "CD&V": 8.0006,
+      "N-VA": 4.7106,
+      "Anders": 3.0,
+      "Onafhankelijk": 0.4294
+    },
+    "schepencollege": {
+      "Hoogstraten Leeft": 4.0011,
+      "N-VA": 3.0006
+    }
+  },
+  "Horebeke": {
+    "gemeenteraad": {
+      "Volksbelangen": 7.0,
+      "N-VA/CD&V": 2.0,
+      "Groen": 1.982
+    },
+    "schepencollege": {
+      "Volksbelangen": 4.0
+    }
+  },
+  "Houthalen-Helchteren": {
+    "gemeenteraad": {
+      "BUUR": 8.0011,
+      "sp.a Groen Plus": 8.0005,
+      "CD&V": 7.0584,
+      "N-VA": 4.0,
+      "VLAAMS BELANG": 3.0005,
+      "sp.a": 1.0
+    },
+    "schepencollege": {
+      "CD&V": 3.0,
+      "sp.a Groen Plus": 3.0,
+      "N-VA": 1.0,
+      "sp.a": 1.0
+    }
+  },
+  "Houthulst": {
+    "gemeenteraad": {
+      "CD&V Plus": 13.0015,
+      "NV-A": 5.0015,
+      "Vooruit": 2.0,
+      "Onafhankelijk": 1.0,
+      "Sp.a": 0.0015
+    },
+    "schepencollege": {
+      "CD&V Plus": 5.0,
+      "Vooruit": 1.0007,
+      "Sp.a": 0.0007
+    }
+  },
+  "Hove": {
+    "gemeenteraad": {
+      "N-VA": 5.9849,
+      "pH7 - Positief Hove": 5.0495,
+      "Fan Van Hove": 4.512,
+      "Hove Beweegt": 4.0
+    },
+    "schepencollege": {
+      "N-VA": 3.001,
+      "Fan Van Hove": 2.0005
+    }
+  },
+  "Huldenberg": {
+    "gemeenteraad": {
+      "Open Vld": 7.0016,
+      "CD&V": 4.1695,
+      "N-VA": 3.0008,
+      "Open VLD": 2.1788,
+      "Groen": 2.0,
+      "GROEN": 1.0,
+      "Onafhankelijk": 1.0,
+      "Open Vld Huldenberg": 0.8212
+    },
+    "schepencollege": {
+      "Open VLD": 2.5467,
+      "Groen": 1.0,
+      "Open Vld": 1.0,
+      "GROEN": 0.4533
+    }
+  },
+  "Hulshout": {
+    "gemeenteraad": {
+      "CD&V": 10.0011,
+      "N-VA": 9.0016,
+      "Groen": 2.0
+    },
+    "schepencollege": {
+      "CD&V": 6.0005
+    }
+  },
+  "Ichtegem": {
+    "gemeenteraad": {
+      "CD&V": 7.0007,
+      "Liberaal 2018": 7.0007,
+      "W.I.T.": 7.0007,
+      "VLAAMS BELANG": 1.0,
+      "sp.a & co": 1.0
+    },
+    "schepencollege": {
+      "Liberaal 2018": 3.0007,
+      "W.I.T.": 3.0
+    }
+  },
+  "Ieper": {
+    "gemeenteraad": {
+      "CD&V": 10.0017,
+      "Open Ieper": 9.0006,
+      "sp.a": 5.0,
+      "N-VA": 3.0,
+      "Groen": 2.0006,
+      "IEPER2030": 2.0
+    },
+    "schepencollege": {
+      "Open Ieper": 3.0,
+      "sp.a": 3.0,
+      "N-VA": 2.0
+    }
+  },
+  "Ingelmunster": {
+    "gemeenteraad": {
+      "De Brug/N-VA/OpenVLD": 13.0015,
+      "CD&V": 5.0015,
+      "Vooruit": 3.2864
+    },
+    "schepencollege": {
+      "De Brug/N-VA/OpenVLD": 6.0015
+    }
+  },
+  "Izegem": {
+    "gemeenteraad": {
+      "N-VA": 13.0048,
+      "STIP": 4.2303,
+      "CD&V": 3.0,
+      "Vlaams Belang": 2.2151,
+      "Groen": 2.1581,
+      "Vooruit": 1.8427,
+      "Open VLD": 1.0,
+      "VLAAMS BELANG": 0.8202,
+      "STiP": 0.7697,
+      "Sp.a": 0.1573
+    },
+    "schepencollege": {
+      "N-VA": 6.0008,
+      "CD&V": 1.0
+    }
+  },
+  "Jabbeke": {
+    "gemeenteraad": {
+      "CD&V": 13.5636,
+      "N-VA": 5.0,
+      "Groen": 2.0007,
+      "VLAAMS BELANG": 1.0,
+      "Vooruit": 1.0,
+      "Onafhankelijk": 0.405
+    },
+    "schepencollege": {
+      "CD&V": 5.9993
+    }
+  },
+  "Kalmthout": {
+    "gemeenteraad": {
+      "CD&V": 13.9863,
+      "N-VA": 5.0016,
+      "Groen": 2.0,
+      "Open Vld": 1.0011,
+      "Onafhankelijk": 1.0,
+      "VLAAMS BELANG": 1.0,
+      "sp.a": 1.0
+    },
+    "schepencollege": {
+      "CD&V": 6.0
+    }
+  },
+  "Kampenhout": {
+    "gemeenteraad": {
+      "Team Burgemeester": 9.0,
+      "Open VLD": 6.0,
+      "N-VA": 3.0,
+      "Groen": 2.4531,
+      "Vlaams Belang": 1.0
+    },
+    "schepencollege": {
+      "Team Burgemeester": 4.0,
+      "Open VLD": 2.0
+    }
+  },
+  "Kapelle-op-den-Bos": {
+    "gemeenteraad": {
+      "N-VA": 9.0,
+      "CD&V": 6.0005,
+      "Groen": 3.0005,
+      "proKA": 3.0
+    },
+    "schepencollege": {
+      "N-VA": 3.4638,
+      "Groen": 1.5362
+    }
+  },
+  "Kapellen": {
+    "gemeenteraad": {
+      "Open VLD": 15.0,
+      "N-VA": 6.08,
+      "Sp.a / Groen": 3.0,
+      "Onafhankelijk": 2.0,
+      "Vlaams Belang": 2.0,
+      "CD&V": 1.0
+    },
+    "schepencollege": {
+      "Open VLD": 6.0,
+      "N-VA": 1.0
+    }
+  },
+  "Kaprijke": {
+    "gemeenteraad": {
+      "CD&V - N-VA - Groen - Onafhankelijken": 9.0,
+      "SAMEN": 7.2188,
+      "Onafhankelijk": 1.0005,
+      "Samen": 0.2914
+    },
+    "schepencollege": {
+      "CD&V - N-VA - Groen - Onafhankelijken": 5.0
+    }
+  },
+  "Kasterlee": {
+    "gemeenteraad": {
+      "CD&V": 12.9946,
+      "N-VA": 5.0798,
+      "Open Vld": 3.3635,
+      "Groen": 2.0658,
+      "Vlaams Belang": 1.0,
+      "N-VA/Open Vld": 0.5578
+    },
+    "schepencollege": {
+      "CD&V": 5.9946
+    }
+  },
+  "Keerbergen": {
+    "gemeenteraad": {
+      "Open VLD": 10.0023,
+      "N-VA": 7.0,
+      "Onafhankelijk": 2.9931,
+      "Groen": 1.9977,
+      "CD&V": 1.0
+    },
+    "schepencollege": {
+      "Open VLD": 4.9977,
+      "CD&V": 0.9977,
+      "Onafhankelijk": 0.9977
+    }
+  },
+  "Kinrooi": {
+    "gemeenteraad": {
+      "CD&V": 16.0,
+      "N-VA": 3.9718,
+      "sp.a": 2.0,
+      "GBK": 1.0
+    },
+    "schepencollege": {
+      "CD&V": 6.4183
+    }
+  },
+  "Kluisbergen": {
+    "gemeenteraad": {
+      "Gemeentebelangen": 11.0,
+      "CD&V PLUS": 5.0,
+      "N-VA": 1.0
+    },
+    "schepencollege": {
+      "Gemeentebelangen": 5.0019
+    }
+  },
+  "Knokke-Heist": {
+    "gemeenteraad": {
+      "Fractie Gemeentebelangen": 23.415,
+      "Onafhankelijk": 3.4803,
+      "Fractie N-VA": 2.0,
+      "Fractie Vlaams Belang": 1.001,
+      "Fractie Vooruit": 1.0,
+      "Fractie Groen": 0.001
+    },
+    "schepencollege": {
+      "Fractie Gemeentebelangen": 7.9481
+    }
+  },
+  "Koekelare": {
+    "gemeenteraad": {
+      "Vooruit": 10.0034,
+      "CD&V": 5.0,
+      "Open Vld": 3.0,
+      "Onafhankelijk": 1.0
+    },
+    "schepencollege": {
+      "Vooruit": 4.0,
+      "Open Vld": 1.0
+    }
+  },
+  "Koksijde": {
+    "gemeenteraad": {
+      "Lijst Burgemeester": 12.9179,
+      "N-VA": 8.001,
+      "Koksijde Vooruit": 4.0519,
+      "Onafhankelijk": 1.09,
+      "sp.a": 1.0
+    },
+    "schepencollege": {
+      "Lijst Burgemeester": 5.8977,
+      "sp.a": 1.0
+    }
+  },
+  "Kontich": {
+    "gemeenteraad": {
+      "N-VA": 10.0,
+      "VLD + Lokaal": 5.0,
+      "Dorpslijst Sander": 4.1215,
+      "CD&V": 4.0035,
+      "Onafhankelijk": 2.0,
+      "Vlaams Belang": 2.0,
+      "Open VLD": 0.0174
+    },
+    "schepencollege": {
+      "N-VA": 4.0,
+      "VLD + Lokaal": 3.0,
+      "Open VLD": 0.0104
+    }
+  },
+  "Kortemark": {
+    "gemeenteraad": {
+      "CD&V": 9.0,
+      "Zeker 8610": 9.0,
+      "Eerlijk en bezorgd": 2.0,
+      "NVA": 2.0,
+      "CONTENT": 1.0,
+      "Open VLD": 0.0172
+    },
+    "schepencollege": {
+      "CD&V": 3.0,
+      "Zeker 8610": 3.0,
+      "Open VLD": 0.0057
+    }
+  },
+  "Kortenaken": {
+    "gemeenteraad": {
+      "Open VLD": 7.9204,
+      "CD&V": 6.0015,
+      "NV-A": 3.0,
+      "SP.a": 2.0
+    },
+    "schepencollege": {
+      "CD&V": 2.0,
+      "NV-A": 2.0,
+      "SP.a": 1.0
+    }
+  },
+  "Kortenberg": {
+    "gemeenteraad": {
+      "Team Burgemeester": 11.002,
+      "UnieK": 5.0007,
+      "N-VA": 5.0,
+      "Groen": 3.0013,
+      "Onafhankelijk": 2.0,
+      "Pro Kortenberg": 1.0007
+    },
+    "schepencollege": {
+      "Team Burgemeester": 5.0,
+      "UnieK": 1.9967
+    }
+  },
+  "Kortessem": {
+    "gemeenteraad": {
+      "CD&V": 10.0684,
+      "Open Vld": 6.0,
+      "N-VA": 1.0,
+      "Onafhankelijk": 1.0,
+      "sp.a": 1.0
+    },
+    "schepencollege": {
+      "CD&V": 4.0,
+      "N-VA": 1.0
+    }
+  },
+  "Kortrijk": {
+    "gemeenteraad": {
+      "Team Burgemeester": 15.0016,
+      "CD&V 4.0": 7.0026,
+      "Sp.a": 6.0408,
+      "Vlaams Belang": 4.0889,
+      "Groen": 4.0,
+      "NV-A": 4.0,
+      "VLAAMS BELANG": 1.0
+    },
+    "schepencollege": {
+      "Team Burgemeester": 4.58,
+      "Sp.a": 3.0,
+      "NV-A": 2.0
+    }
+  },
+  "Kraainem": {
+    "gemeenteraad": {
+      "Défi/MR/Ind.": 11.0012,
+      "KU/LB": 11.0006,
+      "LB": 1.0
+    },
+    "schepencollege": {
+      "Défi/MR/Ind.": 3.14,
+      "KU/LB": 3.0
+    }
+  },
+  "Kruibeke": {
+    "gemeenteraad": {
+      "SamenVoorKruibeke": 8.7857,
+      "N-VA": 5.8285,
+      "CD&V": 3.9275,
+      "D.E.N.E.R.T.": 2.9283,
+      "Onafhankelijk": 2.9283
+    },
+    "schepencollege": {
+      "CD&V": 2.9984,
+      "N-VA": 2.3504,
+      "D.E.N.E.R.T.": 0.6125
+    }
+  },
+  "Kruisem": {
+    "gemeenteraad": {
+      "CD&V": 13.9851,
+      "Open Vld": 4.9679,
+      "Groen&Co": 3.0,
+      "N-VA": 1.9716,
+      "Onafhankelijk": 1.0
+    },
+    "schepencollege": {
+      "CD&V": 7.9995
+    }
+  },
+  "Kuurne": {
+    "gemeenteraad": {
+      "CD&V": 10.0,
+      "N-VA": 4.0,
+      "Open Vld Kuurne": 3.0012,
+      "Nieuw Kuurne": 2.0012,
+      "GROEN": 2.0,
+      "sp.a": 2.0
+    },
+    "schepencollege": {
+      "CD&V": 3.0,
+      "GROEN": 1.0,
+      "N-VA": 1.0,
+      "sp.a": 1.0
+    }
+  },
+  "Laakdal": {
+    "gemeenteraad": {
+      "CD&V": 8.0437,
+      "PROLAAKDAL": 6.0,
+      "N-VA": 5.1092,
+      "Stem! & Open Vld": 1.9953,
+      "VLAAMS BELANG": 1.7655,
+      "Groen": 1.0005
+    },
+    "schepencollege": {
+      "CD&V": 3.0005,
+      "PROLAAKDAL": 3.0
+    }
+  },
+  "Laarne": {
+    "gemeenteraad": {
+      "Open VLD": 11.0,
+      "CD&V": 6.0,
+      "N-VA": 3.0,
+      "Groen": 1.3983,
+      "Onafhankelijk": 1.0,
+      "Vooruit": 1.0
+    },
+    "schepencollege": {
+      "Open VLD": 4.0,
+      "N-VA": 2.0
+    }
+  },
+  "Lanaken": {
+    "gemeenteraad": {
+      "Open Vld-Lanaken": 11.9848,
+      "CD&V": 7.0006,
+      "N-VA": 3.0006,
+      "sp.a-Groen": 3.0,
+      "VLAAMS BELANG": 2.0006,
+      "Groen": 1.0,
+      "Open Vld": 1.0
+    },
+    "schepencollege": {
+      "Open Vld-Lanaken": 3.9994,
+      "sp.a-Groen": 2.0,
+      "Open Vld": 1.0006
+    }
+  },
+  "Landen": {
+    "gemeenteraad": {
+      "CD&V": 7.2134,
+      "open vld": 6.0,
+      "L'anders": 5.1738,
+      "N-VA": 4.0,
+      "Groen Landen": 2.0,
+      "Vooruit Landen": 0.8262
+    },
+    "schepencollege": {
+      "CD&V": 3.1885,
+      "L'anders": 2.5869,
+      "Vooruit Landen": 0.4131
+    }
+  },
+  "Langemark-Poelkapelle": {
+    "gemeenteraad": {
+      "CD&V": 9.0,
+      "N-VA": 7.5056,
+      "TOPE 8920": 2.0,
+      "Vooruit": 1.0
+    },
+    "schepencollege": {
+      "N-VA": 3.0,
+      "TOPE 8920": 1.0,
+      "Vooruit": 1.0
+    }
+  },
+  "Lebbeke": {
+    "gemeenteraad": {
+      "N-VA": 6.9662,
+      "Open Vld": 6.5761,
+      "CD&V": 5.0,
+      "VLAAMS BELANG": 2.0,
+      "sp.a-Groen": 2.0,
+      "Lebbeke Leeft": 1.4026,
+      "Onafhankelijk": 1.0
+    },
+    "schepencollege": {
+      "N-VA": 2.0,
+      "sp.a-Groen": 2.0,
+      "CD&V": 1.9995
+    }
+  },
+  "Lede": {
+    "gemeenteraad": {
+      "CD&V": 10.0015,
+      "N-VA": 4.0,
+      "OPEN LEDE": 3.3171,
+      "Groen": 2.1756,
+      "de coöperatie": 2.0008,
+      "LEDE VLAAMS & ZINVOL": 2.0,
+      "Onafhankelijk": 1.5862
+    },
+    "schepencollege": {
+      "CD&V": 4.0,
+      "Groen": 1.0,
+      "de coöperatie": 1.0
+    }
+  },
+  "Ledegem": {
+    "gemeenteraad": {
+      "CD&V/VD": 18.0025,
+      "Vooruit": 2.0,
+      "Groen": 1.0,
+      "sp.a": 0.0017
+    },
+    "schepencollege": {
+      "CD&V/VD": 5.0008
+    }
+  },
+  "Lendelede": {
+    "gemeenteraad": {
+      "CD&V": 9.0872,
+      "N-VA": 5.0007,
+      "Trots op Lendlee": 2.0,
+      "Onafhankelijk": 1.0007
+    },
+    "schepencollege": {
+      "CD&V": 4.0047,
+      "Onafhankelijk": 1.002
+    }
+  },
+  "Lennik": {
+    "gemeenteraad": {
+      "N-VA-Lennik²": 7.9201,
+      "LB": 6.6951,
+      "CD&V": 3.0005,
+      "Groen": 2.0,
+      "Vlaams Belang": 1.0,
+      "Lijst Burgemeester": 0.4196
+    },
+    "schepencollege": {
+      "CD&V": 2.0,
+      "LB": 2.0,
+      "Groen": 1.0
+    }
+  },
+  "Leopoldsburg": {
+    "gemeenteraad": {
+      "CD&V": 9.0006,
+      "Vooruit": 8.0013,
+      "N-VA": 4.0,
+      "VLAAMS BELANG": 2.0006,
+      "PRO Leopoldsburg": 2.0
+    },
+    "schepencollege": {
+      "CD&V": 3.7985,
+      "Vooruit": 3.0
+    }
+  },
+  "Leuven": {
+    "gemeenteraad": {
+      "Vooruit": 13.893,
+      "Groen": 10.2064,
+      "N-VA": 10.1128,
+      "CD&V": 8.1022,
+      "Open Vld": 2.1041,
+      "Onafhankelijk": 1.109,
+      "PVDA": 1.0,
+      "Vlaams Belang": 1.0
+    },
+    "schepencollege": {
+      "CD&V": 4.0,
+      "Vooruit": 4.0,
+      "Groen": 3.0
+    }
+  },
+  "Lichtervelde": {
+    "gemeenteraad": {
+      "CD&V": 12.0,
+      "SOMM": 4.0,
+      "N-VA": 2.0,
+      "Open Vld": 1.0
+    },
+    "schepencollege": {
+      "CD&V": 5.0
+    }
+  },
+  "Liedekerke": {
+    "gemeenteraad": {
+      "N-VA": 8.0016,
+      "CD&V Plus": 7.0,
+      "sp.a vooruit": 5.0,
+      "Open VLD": 2.0005,
+      "Vlaams Belang": 1.0
+    },
+    "schepencollege": {
+      "sp.a vooruit": 2.9534,
+      "CD&V Plus": 2.5715,
+      "Open VLD": 1.0
+    }
+  },
+  "Lier": {
+    "gemeenteraad": {
+      "N-VA": 12.0,
+      "Open Vld": 6.0,
+      "groen-Lier&Ko": 4.117,
+      "CD&V": 4.0,
+      "Vlaams Belang": 3.6731,
+      "Hart voor de burger": 1.0,
+      "sp.a": 1.0,
+      "Groen-Lier&Ko": 0.883,
+      "VLAAMS BELANG": 0.3269
+    },
+    "schepencollege": {
+      "N-VA": 5.0,
+      "Open Vld": 3.0
+    }
+  },
+  "Lierde": {
+    "gemeenteraad": {
+      "Voor Lierde": 11.0,
+      "Open Vld Lierde": 3.0,
+      "de 3de partij": 3.0
+    },
+    "schepencollege": {
+      "Voor Lierde": 4.9953,
+      "Onafhankelijk": 0.1585
+    }
+  },
+  "Lievegem": {
+    "gemeenteraad": {
+      "CD&V": 14.001,
+      "Open Vld": 6.0134,
+      "NVA": 4.0019,
+      "Groen": 3.0,
+      "Onafhankelijke": 1.0,
+      "Vooruit": 1.0
+    },
+    "schepencollege": {
+      "CD&V": 5.9894,
+      "Open Vld": 3.001
+    }
+  },
+  "Lille": {
+    "gemeenteraad": {
+      "N-VA": 10.9958,
+      "CD&V": 7.001,
+      "Groen": 5.0005,
+      "VLAAMS BELANG": 2.0
+    },
+    "schepencollege": {
+      "N-VA": 4.0005,
+      "Groen": 2.0
+    }
+  },
+  "Linkebeek": {
+    "gemeenteraad": {
+      "LINK@VENIR": 6.988,
+      "ensembleLKBsamen": 4.982,
+      "Activ'": 3.0005
+    },
+    "schepencollege": {
+      "LINK@VENIR": 3.0087,
+      "ensembleLKBsamen": 1.0
+    }
+  },
+  "Lint": {
+    "gemeenteraad": {
+      "N-VA": 6.9847,
+      "CD&V": 4.0414,
+      "Groen": 3.1385,
+      "Open VLD": 2.0496,
+      "Vlaams Belang": 2.0,
+      "sp.a": 0.9907
+    },
+    "schepencollege": {
+      "N-VA": 3.0,
+      "CD&V": 1.9466
+    }
+  },
+  "Linter": {
+    "gemeenteraad": {
+      "CD&V": 13.6269,
+      "Open vld": 2.0009,
+      "NV-A": 2.0,
+      "Vooruit": 1.0564,
+      "Onafhankelijk": 0.3759
+    },
+    "schepencollege": {
+      "CD&V": 5.0047
+    }
+  },
+  "Lo-Reninge": {
+    "gemeenteraad": {
+      "DYNAMISCH": 8.0017,
+      "INSPRAAK": 5.0017
+    },
+    "schepencollege": {
+      "DYNAMISCH": 4.0
+    }
+  },
+  "Lochristi": {
+    "gemeenteraad": {
+      "Open Vld": 16.0,
+      "CD&V": 5.0,
+      "N-VA": 4.004,
+      "Groen-sp.a": 2.0,
+      "VLAAMS BELANG": 1.0
+    },
+    "schepencollege": {
+      "Open Vld": 6.9677
+    }
+  },
+  "Lokeren": {
+    "gemeenteraad": {
+      "Open Vld": 12.9767,
+      "CD&V": 8.0,
+      "Groen": 5.0,
+      "N-VA": 4.0,
+      "Vlaams Belang": 3.0,
+      "Vooruit": 2.0
+    },
+    "schepencollege": {
+      "Open Vld": 5.0,
+      "CD&V": 3.0
+    }
+  },
+  "Lommel": {
+    "gemeenteraad": {
+      "CD&V": 13.0,
+      "Samen Vooruit": 11.0,
+      "N-VA": 5.0238,
+      "PVDA": 1.0,
+      "voor3920lommel": 1.0
+    },
+    "schepencollege": {
+      "CD&V": 6.0,
+      "N-VA": 2.0
+    }
+  },
+  "Londerzeel": {
+    "gemeenteraad": {
+      "N-VA": 11.0006,
+      "LWD": 9.0011,
+      "CD&V": 3.0,
+      "Pro1840": 2.0,
+      "Groen": 1.0
+    },
+    "schepencollege": {
+      "LWD": 3.0,
+      "CD&V": 2.0,
+      "Groen": 1.0
+    }
+  },
+  "Lubbeek": {
+    "gemeenteraad": {
+      "N-VA": 9.2748,
+      "Groen": 4.6497,
+      "CD&V": 4.1483,
+      "Lubbeek Leeft": 4.0,
+      "Open VLD": 2.0
+    },
+    "schepencollege": {
+      "N-VA": 5.0,
+      "CD&V": 1.0
+    }
+  },
+  "Lummen": {
+    "gemeenteraad": {
+      "CD&V": 12.018,
+      "Vooruit": 4.0006,
+      "N-VA": 3.0006,
+      "Groen": 2.9809,
+      "Open Vld": 1.0,
+      "Onafhankelijk": 0.8465
+    },
+    "schepencollege": {
+      "CD&V": 4.8465,
+      "N-VA": 1.0
+    }
+  },
+  "Maarkedal": {
+    "gemeenteraad": {
+      "N-VA": 6.9884,
+      "CD&V Vooruit": 5.0,
+      "Voor Maarkedal": 3.0,
+      "KOMOP Maarkedal": 1.0
+    },
+    "schepencollege": {
+      "N-VA": 3.0,
+      "Voor Maarkedal": 2.0
+    }
+  },
+  "Maaseik": {
+    "gemeenteraad": {
+      "Open Vld": 8.0014,
+      "CD&V": 7.0021,
+      "PRO3680": 5.0007,
+      "VLAAMS BELANG": 4.0007,
+      "N-VA": 4.0,
+      "Onafhankelijk": 1.0
+    },
+    "schepencollege": {
+      "Open Vld": 3.0,
+      "N-VA": 2.0,
+      "PRO3680": 2.0
+    }
+  },
+  "Maasmechelen": {
+    "gemeenteraad": {
+      "CD&V": 12.0,
+      "Open MM": 6.0008,
+      "PUUR-MAASMECHELEN": 4.0,
+      "Vooruit": 3.0,
+      "N-VA": 2.3632,
+      "VLAAMS BELANG": 2.0,
+      "ademM": 2.0,
+      "Onafhankelijk": 1.6383,
+      "sp.a": 0.0023
+    },
+    "schepencollege": {
+      "CD&V": 4.81,
+      "Open MM": 3.1884
+    }
+  },
+  "Machelen": {
+    "gemeenteraad": {
+      "Samen Vooruit": 8.0652,
+      "N-VA": 6.0008,
+      "CD&V": 4.6415,
+      "Onafhankelijk": 3.6622,
+      "sp.a - spirit - groen": 1.6423,
+      "Open VLD": 1.0
+    },
+    "schepencollege": {
+      "Samen Vooruit": 2.5612,
+      "N-VA": 2.4404
+    }
+  },
+  "Maldegem": {
+    "gemeenteraad": {
+      "Open Vld": 9.0019,
+      "CD&V": 7.001,
+      "N-VA": 4.001,
+      "De Merlaan": 3.0,
+      "Groen": 2.0,
+      "Onafhankelijk": 1.384,
+      "Vlaams Belang": 1.0
+    },
+    "schepencollege": {
+      "N-VA": 2.0,
+      "CD&V": 1.9599,
+      "Groen": 0.9799,
+      "Onafhankelijk": 0.384,
+      "Open Vld": 0.2989,
+      "De Merlaan": 0.021
+    }
+  },
+  "Malle": {
+    "gemeenteraad": {
+      "N-VA": 6.0,
+      "DBM": 5.9815,
+      "OOSTWEST": 5.0,
+      "Progressief Malle": 3.0014,
+      "CD&V Malle": 2.9843,
+      "Onafhankelijk": 1.0,
+      "VLAAMS BELANG": 1.0
+    },
+    "schepencollege": {
+      "N-VA": 2.7601,
+      "DBM": 2.4797,
+      "CD&V Malle": 1.0
+    }
+  },
+  "Mechelen": {
+    "gemeenteraad": {
+      "Voor Mechelen": 26.6791,
+      "N-VA": 4.6813,
+      "CD&V": 3.0,
+      "Vooruit": 3.0,
+      "Vlaams Belang": 2.2264,
+      "Onafhankelijk (3-4-5)": 1.3187,
+      "Onafhankelijk (2)": 1.0,
+      "Partij van de Arbeid": 1.0,
+      "Onafhankelijk": 0.7758,
+      "Vld-Groen-M+": 0.3231
+    },
+    "schepencollege": {
+      "Voor Mechelen": 9.9473
+    }
+  },
+  "Meerhout": {
+    "gemeenteraad": {
+      "cd": 7.0,
+      "Vooruit": 5.0005,
+      "VLAAMS BELANG": 3.4653,
+      "N-VA": 2.4091,
+      "MERRET anders": 2.0005,
+      "Onafhankelijk": 1.1271
+    },
+    "schepencollege": {
+      "cd": 3.0016,
+      "Vooruit": 1.3945,
+      "MERRET anders": 0.5357,
+      "N-VA": 0.5357
+    }
+  },
+  "Meise": {
+    "gemeenteraad": {
+      "LB+": 7.2915,
+      "N-VA": 5.6899,
+      "Onafhankelijk": 4.0,
+      "CD&V": 3.0007,
+      "Samen anders": 3.0,
+      "PRO": 1.0
+    },
+    "schepencollege": {
+      "N-VA": 2.7171,
+      "LB+": 2.3307,
+      "Samen anders": 0.4475,
+      "Onafhankelijk": 0.2238,
+      "PRO": 0.2238
+    }
+  },
+  "Melle": {
+    "gemeenteraad": {
+      "CD&V/N-VA": 10.9455,
+      "Groen": 3.89,
+      "Open Vld": 3.889,
+      "sp.a Jij Maakt Melle": 1.9445
+    },
+    "schepencollege": {
+      "CD&V/N-VA": 5.9684
+    }
+  },
+  "Menen": {
+    "gemeenteraad": {
+      "CD&V": 10.2523,
+      "Open Vld": 6.094,
+      "Vooruit": 5.2989,
+      "N-VA": 4.0,
+      "Vlaams Belang": 2.7248,
+      "Groen": 2.0008,
+      "sp.a": 0.7018,
+      "Onafhankelijk": 0.4151
+    },
+    "schepencollege": {
+      "Vooruit": 3.0008,
+      "N-VA": 3.0,
+      "Open Vld": 2.0
+    }
+  },
+  "Merchtem": {
+    "gemeenteraad": {
+      "Lijst Van de Burgemeester": 10.0,
+      "PRO Merchtem": 6.9376,
+      "CD&V-plus": 3.9875,
+      "N-VA": 3.0,
+      "Groen": 1.0
+    },
+    "schepencollege": {
+      "Lijst Van de Burgemeester": 4.0,
+      "CD&V-plus": 2.0
+    }
+  },
+  "Merelbeke": {
+    "gemeenteraad": {
+      "Open VLD": 8.0,
+      "CD&V": 7.0,
+      "Groen": 6.0011,
+      "N-VA": 4.0006,
+      "Onafhankelijk": 1.0,
+      "Vooruit": 0.7431,
+      "sp.a": 0.2569
+    },
+    "schepencollege": {
+      "Open VLD": 4.0,
+      "CD&V": 3.0
+    }
+  },
+  "Merksplas": {
+    "gemeenteraad": {
+      "leefbaar Merksplas": 15.0007,
+      "Groen": 2.0,
+      "N-VA": 2.0
+    },
+    "schepencollege": {
+      "leefbaar Merksplas": 5.0007
+    }
+  },
+  "Mesen": {
+    "gemeenteraad": {
+      "MLM": 7.0,
+      "RESPECT !": 2.0
+    },
+    "schepencollege": {
+      "MLM": 4.0
+    }
+  },
+  "Meulebeke": {
+    "gemeenteraad": {
+      "Lijst burgemeester": 9.0034,
+      "Onafhankelijk": 6.5589,
+      "N-VA": 3.4438,
+      "Zorgsaam": 2.0
+    },
+    "schepencollege": {
+      "Lijst burgemeester": 5.0054,
+      "Zorgsaam": 1.0
+    }
+  },
+  "Middelkerke": {
+    "gemeenteraad": {
+      "LDD (lijst Dedecker)": 13.9529,
+      "Open VLD": 5.968,
+      "CD&V": 3.0,
+      "N-VA": 1.0,
+      "Groen": 0.9893
+    },
+    "schepencollege": {
+      "LDD (lijst Dedecker)": 4.9753,
+      "CD&V": 1.0
+    }
+  },
+  "Moerbeke": {
+    "gemeenteraad": {
+      "Lokaal Liberaal": 10.0,
+      "CD&V+": 4.0,
+      "N-VA": 2.0023,
+      "Mens": 1.0,
+      "Open Vld": 0.0227
+    },
+    "schepencollege": {
+      "Lokaal Liberaal": 5.0,
+      "Open Vld": 0.0113
+    }
+  },
+  "Mol": {
+    "gemeenteraad": {
+      "CD&V": 10.0016,
+      "N-VA": 10.0005,
+      "Vooruit": 4.001,
+      "Open VLD+": 3.0005,
+      "MeMo": 3.0,
+      "Vlaams Belang": 2.001,
+      "Onafhankelijk": 1.0
+    },
+    "schepencollege": {
+      "N-VA": 4.443,
+      "CD&V": 3.5586
+    }
+  },
+  "Moorslede": {
+    "gemeenteraad": {
+      "VISIE": 7.0,
+      "STERK": 5.0,
+      "Groep a": 3.0015,
+      "N-VA": 3.0,
+      "PRO": 3.0,
+      "Onafhankelijk": 0.4204
+    },
+    "schepencollege": {
+      "VISIE": 3.0015,
+      "STERK": 3.0
+    }
+  },
+  "Mortsel": {
+    "gemeenteraad": {
+      "N-VA": 11.4844,
+      "Groen": 8.1223,
+      "sp.a-I love Mortsel": 3.0,
+      "Vlaams Belang": 2.0,
+      "Onafhankelijk": 1.6205,
+      "Mortsel leeft!": 1.4634,
+      "CD&V": 1.0,
+      "Open VLD": 1.0
+    },
+    "schepencollege": {
+      "N-VA": 4.0,
+      "sp.a-I love Mortsel": 2.0005,
+      "Open VLD": 1.0
+    }
+  },
+  "Nazareth": {
+    "gemeenteraad": {
+      "CD&V": 9.9986,
+      "Open Vld": 3.9986,
+      "N-VA": 3.0014,
+      "Vooruit-Groen": 2.9986,
+      "Onafhankelijk": 1.0
+    },
+    "schepencollege": {
+      "CD&V": 4.9587,
+      "Vooruit-Groen": 1.0
+    }
+  },
+  "Niel": {
+    "gemeenteraad": {
+      "Open Vld": 10.0,
+      "N-VA": 4.0025,
+      "Vooruit - Groen": 4.0,
+      "Onafhankelijk": 2.0,
+      "CD&V": 1.0
+    },
+    "schepencollege": {
+      "Open Vld": 4.0,
+      "N-VA": 2.005
+    }
+  },
+  "Nieuwerkerken": {
+    "gemeenteraad": {
+      "CD&V": 9.0,
+      "GEMEENTEBELANGEN": 4.0,
+      "sp.a": 3.0,
+      "N-VA": 1.0
+    },
+    "schepencollege": {
+      "CD&V": 5.0
+    }
+  },
+  "Nieuwpoort": {
+    "gemeenteraad": {
+      "CD&V": 15.0008,
+      "PRO NIEUWPOORT": 3.0,
+      "N-VA": 2.0016,
+      "VLAAMS BELANG": 1.0008
+    },
+    "schepencollege": {
+      "CD&V": 6.0
+    }
+  },
+  "Nijlen": {
+    "gemeenteraad": {
+      "CD&V": 10.0006,
+      "N-VA": 6.0,
+      "Groen-Open Vld": 5.0017,
+      "N&U": 2.0006,
+      "Nieuw Nijlen": 2.0,
+      "VLAAMS BELANG": 2.0
+    },
+    "schepencollege": {
+      "CD&V": 4.0,
+      "Groen-Open Vld": 2.0011,
+      "N&U": 1.0
+    }
+  },
+  "Ninove": {
+    "gemeenteraad": {
+      "FORZA NINOVE": 18.0,
+      "Open VLD": 8.0012,
+      "SAMEN": 7.0025,
+      "Open Vld": 1.0025,
+      "N-VA": 1.0,
+      "Onafhankelijk": 1.0
+    },
+    "schepencollege": {
+      "Open VLD": 4.0,
+      "SAMEN": 3.0,
+      "Onafhankelijk": 1.0
+    }
+  },
+  "Olen": {
+    "gemeenteraad": {
+      "CD&V": 9.0013,
+      "O1": 6.0006,
+      "N-VA": 4.9601,
+      "Vooruit": 1.7308,
+      "Groen": 1.0,
+      "sp.a sociaal & anders": 0.2582
+    },
+    "schepencollege": {
+      "CD&V": 4.0045,
+      "Groen": 1.0,
+      "Vooruit": 0.8706,
+      "sp.a sociaal & anders": 0.1301
+    }
+  },
+  "Oostende": {
+    "gemeenteraad": {
+      "Vooruit": 11.0021,
+      "Open VLD": 9.0545,
+      "N-VA": 7.0005,
+      "Vlaams Belang": 5.9501,
+      "Groen": 4.826,
+      "CD&V": 3.0005,
+      "Onafhankelijk": 0.2852
+    },
+    "schepencollege": {
+      "Open VLD": 3.0005,
+      "N-VA": 3.0,
+      "Groen": 2.0,
+      "CD&V": 1.0
+    }
+  },
+  "Oosterzele": {
+    "gemeenteraad": {
+      "CD&V/N-VA": 13.0,
+      "VOLUIT": 8.5094,
+      "Groen": 3.1586
+    },
+    "schepencollege": {
+      "CD&V/N-VA": 6.0
+    }
+  },
+  "Oostkamp": {
+    "gemeenteraad": {
+      "CD&V": 11.1314,
+      "cd&v team 80twintig": 4.868,
+      "N-VA": 4.0011,
+      "Vooruit Oostkamp": 2.2413,
+      "Groen": 2.0006,
+      "Vlaams Belang": 2.0,
+      "sp.a": 0.7587
+    },
+    "schepencollege": {
+      "CD&V": 4.8708,
+      "cd&v team 80twintig": 2.1298
+    }
+  },
+  "Oostrozebeke": {
+    "gemeenteraad": {
+      "Oostrozebeke.nu": 10.0021,
+      "INSPRAAK.nu": 9.0
+    },
+    "schepencollege": {
+      "Oostrozebeke.nu": 4.963
+    }
+  },
+  "Opwijk": {
+    "gemeenteraad": {
+      "N-VA": 9.0,
+      "Open Vld": 8.0005,
+      "CD&V": 3.0,
+      "INZET": 2.0,
+      "Groen": 1.0005
+    },
+    "schepencollege": {
+      "N-VA": 3.2832,
+      "Open Vld": 2.7153
+    }
+  },
+  "Oud-Heverlee": {
+    "gemeenteraad": {
+      "N-VA": 6.4159,
+      "CD&V": 6.0,
+      "Groen": 5.0605,
+      "Open Vld": 2.0,
+      "Vooruit": 1.0,
+      "Onafhankelijk": 0.5847
+    },
+    "schepencollege": {
+      "CD&V": 3.0,
+      "Groen": 2.0,
+      "Vooruit": 0.8249,
+      "sp.a-plus": 0.1751
+    }
+  },
+  "Oud-Turnhout": {
+    "gemeenteraad": {
+      "N-VA": 8.0,
+      "CD&V pluS": 6.7456,
+      "Groen": 3.0016,
+      "VLAAMS BELANG": 3.0008,
+      "Onafhankelijk": 1.2544,
+      "LB18": 1.0008
+    },
+    "schepencollege": {
+      "N-VA": 3.628,
+      "Groen": 2.0008,
+      "LB18": 0.3728
+    }
+  },
+  "Oudenaarde": {
+    "gemeenteraad": {
+      "Open VLD": 13.0,
+      "CD&V": 6.1309,
+      "Groen": 6.0,
+      "N-VA": 3.0,
+      "sp.a": 1.2188,
+      "Sp.A": 1.0,
+      "Vlaams Belang": 1.0
+    },
+    "schepencollege": {
+      "Open VLD": 6.0,
+      "CD&V": 2.0041
+    }
+  },
+  "Oudenburg": {
+    "gemeenteraad": {
+      "CD&V": 9.0005,
+      "Open Vld": 8.9811,
+      "Vooruit": 2.0005,
+      "N-VA": 0.9908
+    },
+    "schepencollege": {
+      "Open Vld": 2.001,
+      "Vooruit": 2.0005,
+      "N-VA": 1.0
+    }
+  },
+  "Oudsbergen": {
+    "gemeenteraad": {
+      "CD&V Oudsbergen": 16.9917,
+      "N-VA": 6.0,
+      "OPEN OUDSBERGEN": 3.0,
+      "Groen": 1.0
+    },
+    "schepencollege": {
+      "CD&V Oudsbergen": 6.9917
+    }
+  },
+  "Overijse": {
+    "gemeenteraad": {
+      "Overijse2002-N-VA": 9.9945,
+      "OPENVLDGROENOVERIJSE": 9.0011,
+      "Overijse Plus": 6.0,
+      "CD&V": 3.0,
+      "Leefbaar Overijse": 1.0
+    },
+    "schepencollege": {
+      "OPENVLDGROENOVERIJSE": 3.9928,
+      "Overijse2002-N-VA": 3.0088
+    }
+  },
+  "Peer": {
+    "gemeenteraad": {
+      "CD&V": 16.6449,
+      "N-VA": 4.0,
+      "APPEL": 3.0,
+      "Onafhankelijk": 1.0,
+      "Speer": 1.0
+    },
+    "schepencollege": {
+      "CD&V": 6.0007
+    }
+  },
+  "Pelt": {
+    "gemeenteraad": {
+      "CD&V": 16.9631,
+      "N-VA": 3.9882,
+      "SAMEN  PELT": 3.0,
+      "Groen": 2.9217,
+      "SAMEN PELT": 2.0,
+      "LIJST VISSERS": 1.9335
+    },
+    "schepencollege": {
+      "CD&V": 9.0,
+      "SAMEN  PELT": 1.0
+    }
+  },
+  "Pepingen": {
+    "gemeenteraad": {
+      "LVB-LIJSTvdBURGER": 9.0014,
+      "CD&V": 4.0,
+      "DVP": 2.0,
+      "N-VA": 1.0
+    },
+    "schepencollege": {
+      "LVB-LIJSTvdBURGER": 4.0
+    }
+  },
+  "Pittem": {
+    "gemeenteraad": {
+      "CD&V": 9.0646,
+      "NieuwPittemEgem": 8.0013
+    },
+    "schepencollege": {
+      "CD&V": 5.0026
+    }
+  },
+  "Poperinge": {
+    "gemeenteraad": {
+      "CD&V": 12.1129,
+      "Open Vld": 7.0021,
+      "Samen": 3.0,
+      "Groen": 1.0021,
+      "N-VA": 1.0,
+      "VLAAMS BELANG": 1.0
+    },
+    "schepencollege": {
+      "CD&V": 5.0,
+      "Samen": 1.0
+    }
+  },
+  "Putte": {
+    "gemeenteraad": {
+      "Lijst Burgemeester": 11.0304,
+      "CD&V-GROEN PUTTE": 11.0005,
+      "N-VA": 3.0
+    },
+    "schepencollege": {
+      "Lijst Burgemeester": 3.0,
+      "N-VA": 3.0
+    }
+  },
+  "Puurs-Sint-Amands": {
+    "gemeenteraad": {
+      "CD&V-teamkoen": 17.0,
+      "N-VA": 4.9056,
+      "KR8!": 3.0,
+      "Groen": 2.0,
+      "VLAAMS BELANG": 2.0,
+      "Onafhankelijk": 0.0925
+    },
+    "schepencollege": {
+      "CD&V-teamkoen": 8.9958
+    }
+  },
+  "Ranst": {
+    "gemeenteraad": {
+      "N-VA": 10.0005,
+      "Groen": 5.0005,
+      "CD&V/WIJ": 3.0,
+      "Goesting!": 2.9801,
+      "Onafhankelijk": 2.853,
+      "Vlaams Belang": 2.0
+    },
+    "schepencollege": {
+      "N-VA": 3.0,
+      "Groen": 2.0
+    }
+  },
+  "Ravels": {
+    "gemeenteraad": {
+      "CD&V": 15.9745,
+      "N-VA": 5.9155,
+      "Groen": 2.0
+    },
+    "schepencollege": {
+      "CD&V": 6.0015
+    }
+  },
+  "Retie": {
+    "gemeenteraad": {
+      "Nieuw Retie": 11.0,
+      "CD&V": 7.9875,
+      "N-VA": 1.7185,
+      "Onafhankelijk": 0.2815
+    },
+    "schepencollege": {
+      "Nieuw Retie": 6.0005
+    }
+  },
+  "Riemst": {
+    "gemeenteraad": {
+      "CD&V": 13.6671,
+      "Open Vld": 4.9671,
+      "N-VA": 4.962,
+      "VLAAMS BELANG": 1.0
+    },
+    "schepencollege": {
+      "CD&V": 5.9917
+    }
+  },
+  "Rijkevorsel": {
+    "gemeenteraad": {
+      "N-VA": 11.0007,
+      "CD&V": 3.0,
+      "Onafhankelijk": 3.0,
+      "ProVeussel": 2.0,
+      "Gemeentebelangen": 1.2029,
+      "GemeenteBelangen": 0.8004
+    },
+    "schepencollege": {
+      "N-VA": 5.0,
+      "CD&V": 1.0
+    }
+  },
+  "Roeselare": {
+    "gemeenteraad": {
+      "CD&V": 18.0038,
+      "N-VA": 6.7328,
+      "VLAAMS BELANG": 6.0,
+      "Groen": 3.001,
+      "Vooruit": 3.001,
+      "Open Vld": 2.0,
+      "Onafhankelijk": 0.2692
+    },
+    "schepencollege": {
+      "CD&V": 7.5603,
+      "Vooruit": 1.0,
+      "Open Vld": 0.4397
+    }
+  },
+  "Ronse": {
+    "gemeenteraad": {
+      "CD&V": 11.0023,
+      "N-VA": 7.0,
+      "sp.a": 5.9593,
+      "Groen": 2.0,
+      "Open Vld": 2.0,
+      "Onafhankelijk": 1.0
+    },
+    "schepencollege": {
+      "CD&V": 4.0011,
+      "N-VA": 2.0,
+      "Onafhankelijk": 1.0
+    }
+  },
+  "Roosdaal": {
+    "gemeenteraad": {
+      "CD&V": 11.0009,
+      "N-VA": 6.9707,
+      "groen": 2.0,
+      "Roosdaal-anders": 1.0
+    },
+    "schepencollege": {
+      "CD&V": 6.0026
+    }
+  },
+  "Rotselaar": {
+    "gemeenteraad": {
+      "ROX": 8.4105,
+      "N-VA": 4.0,
+      "anders": 3.771,
+      "Groen": 3.0013,
+      "Open Vld": 3.0,
+      "CD&V": 1.5932,
+      "Onafhankelijk": 1.0,
+      "Vooruit": 1.0
+    },
+    "schepencollege": {
+      "ROX": 3.3642,
+      "N-VA": 2.0,
+      "CD&V": 0.6358
+    }
+  },
+  "Ruiselede": {
+    "gemeenteraad": {
+      "rkd": 8.8022,
+      "RESPECT": 7.8542
+    },
+    "schepencollege": {
+      "rkd": 4.9769
+    }
+  },
+  "Rumst": {
+    "gemeenteraad": {
+      "N-VA": 8.9834,
+      "CD&V": 6.0,
+      "sp.a-Groen": 6.0,
+      "Vlaams Belang": 2.857,
+      "Onafhankelijk André Gielis": 1.0,
+      "CD&V - 3D": 0.0025
+    },
+    "schepencollege": {
+      "CD&V": 3.4948,
+      "N-VA": 3.0,
+      "CD&V - 3D": 0.0012
+    }
+  },
+  "Schelle": {
+    "gemeenteraad": {
+      "CD&V": 9.9696,
+      "N-VA": 5.0,
+      "Groen": 2.0,
+      "Vlaams Belang": 2.0
+    },
+    "schepencollege": {
+      "CD&V": 5.0
+    }
+  },
+  "Scherpenheuvel-Zichem": {
+    "gemeenteraad": {
+      "CD&V": 9.0879,
+      "Open VLD": 8.0,
+      "N-VA": 5.0,
+      "Vlaams Belang": 3.0,
+      "Vooruit": 1.6711,
+      "SP.A": 0.3302
+    },
+    "schepencollege": {
+      "Open VLD": 3.6749,
+      "CD&V": 3.3251
+    }
+  },
+  "Schilde": {
+    "gemeenteraad": {
+      "N-VA": 11.9628,
+      "Lokaal - Liberaal": 8.0005,
+      "CD&V": 2.0,
+      "Groen": 1.989,
+      "VLAAMS BELANG": 1.0
+    },
+    "schepencollege": {
+      "N-VA": 3.9477,
+      "Lokaal - Liberaal": 2.0
+    }
+  },
+  "Schoten": {
+    "gemeenteraad": {
+      "N-VA": 15.4462,
+      "Vlaams Belang": 7.0,
+      "CD&V": 3.0005,
+      "Groen": 3.0005,
+      "Open VLD": 1.0,
+      "Vooruit": 1.0,
+      "Onafhankelijk": 0.5548
+    },
+    "schepencollege": {
+      "N-VA": 7.0005,
+      "Open VLD": 1.0
+    }
+  },
+  "Sint-Genesius-Rode": {
+    "gemeenteraad": {
+      "IC-GB": 18.1831,
+      "Engagement 1640": 7.0
+    },
+    "schepencollege": {
+      "IC-GB": 5.754,
+      "Engagement 1640": 1.0
+    }
+  },
+  "Sint-Gillis-Waas": {
+    "gemeenteraad": {
+      "N-VA": 10.0,
+      "CD&V": 9.0015,
+      "Groen-Vooruit": 4.0,
+      "Onafhankelijk": 1.9559,
+      "Vlaams Belang": 0.0441,
+      "Groen-sp.a": 0.003
+    },
+    "schepencollege": {
+      "CD&V": 4.0,
+      "Groen-Vooruit": 2.0,
+      "Groen-sp.a": 0.0015
+    }
+  },
+  "Sint-Katelijne-Waver": {
+    "gemeenteraad": {
+      "N-VA": 9.9732,
+      "Samen Anders": 8.0,
+      "CD&V": 3.9821,
+      "Onafhankelijk": 2.0005,
+      "Vlaams Belang": 2.0,
+      "Groen": 1.0
+    },
+    "schepencollege": {
+      "N-VA": 3.9892,
+      "CD&V": 3.0
+    }
+  },
+  "Sint-Laureins": {
+    "gemeenteraad": {
+      "Samen Anders": 10.0,
+      "CD&V": 6.1002,
+      "Onafhankelijk": 1.0
+    },
+    "schepencollege": {
+      "Samen Anders": 5.0
+    }
+  },
+  "Sint-Lievens-Houtem": {
+    "gemeenteraad": {
+      "NIEUW HOUTEM": 12.0,
+      "Onafhankelijk": 4.0,
+      "CD&V": 2.0,
+      "N-VA": 2.0,
+      "Open VLD": 1.0019,
+      "Vooruit-Groen": 0.0038,
+      "Open Vld": 0.0019
+    },
+    "schepencollege": {
+      "NIEUW HOUTEM": 4.0,
+      "Nieuw Houtem": 2.0
+    }
+  },
+  "Sint-Martens-Latem": {
+    "gemeenteraad": {
+      "Welzijn": 10.2745,
+      "Samen N-VA": 5.0011,
+      "Voor Latem en Deurle": 4.0
+    },
+    "schepencollege": {
+      "Welzijn": 5.0011,
+      "Samen N-VA": 0.4
+    }
+  },
+  "Sint-Niklaas": {
+    "gemeenteraad": {
+      "N-VA": 14.0872,
+      "Vlaams Belang": 7.0008,
+      "CD&V": 6.1223,
+      "Groen": 6.0008,
+      "sp.a": 5.0,
+      "Open Vld": 2.0,
+      "PVDA": 1.0008
+    },
+    "schepencollege": {
+      "N-VA": 5.0016,
+      "Groen": 3.0,
+      "Open Vld": 1.0
+    }
+  },
+  "Sint-Pieters-Leeuw": {
+    "gemeenteraad": {
+      "N-VA": 11.0,
+      "PF": 7.0,
+      "CD&V": 6.7126,
+      "Groen": 2.0,
+      "GEMEENTEBELANGEN": 1.0,
+      "Open Vld": 1.0,
+      "VLAAMS BELANG": 1.0,
+      "Vooruit": 1.0,
+      "Onafhankelijk": 0.2874
+    },
+    "schepencollege": {
+      "N-VA": 6.105,
+      "CD&V": 2.9883,
+      "Onafhankelijk": 0.5631
+    }
+  },
+  "Sint-Truiden": {
+    "gemeenteraad": {
+      "CD&V": 10.0032,
+      "sp.a": 10.0,
+      "N-VA": 7.0032,
+      "Open Vld": 7.0,
+      "Groen": 1.0
+    },
+    "schepencollege": {
+      "N-VA": 3.0032,
+      "Open Vld": 3.0,
+      "CD&V": 2.0
+    }
+  },
+  "Spiere-Helkijn": {
+    "gemeenteraad": {
+      "LB-2018": 6.0,
+      "TeAm+": 5.0132
+    },
+    "schepencollege": {
+      "LB-2018": 4.0
+    }
+  },
+  "Stabroek": {
+    "gemeenteraad": {
+      "N-VA": 12.0009,
+      "Vlaams Belang": 5.3472,
+      "CD&V": 3.0,
+      "sp.a-groen": 3.0,
+      "Open VLD": 2.0
+    },
+    "schepencollege": {
+      "N-VA": 5.0,
+      "CD&V": 1.0
+    }
+  },
+  "Staden": {
+    "gemeenteraad": {
+      "Open Vld": 13.0007,
+      "CD&V": 6.0007,
+      "N-VA": 1.0007,
+      "sp.a": 1.0
+    },
+    "schepencollege": {
+      "Open Vld": 6.0
+    }
+  },
+  "Steenokkerzeel": {
+    "gemeenteraad": {
+      "Klaver-NVA": 13.9598,
+      "LVB": 3.9523,
+      "onafhankelijk": 2.0,
+      "GROEN": 1.0005,
+      "CD&V": 1.0,
+      "Sp.a": 1.0
+    },
+    "schepencollege": {
+      "Klaver-NVA": 6.0
+    }
+  },
+  "Stekene": {
+    "gemeenteraad": {
+      "Gemeentebelangen": 12.9664,
+      "Groen": 4.0012,
+      "Vlaams belang": 3.4892,
+      "CD&V": 3.229,
+      "Onafhankelijk": 0.7722,
+      "VLAAMS BELANG": 0.5132
+    },
+    "schepencollege": {
+      "Gemeentebelangen": 6.0
+    }
+  },
+  "Temse": {
+    "gemeenteraad": {
+      "CD&V": 7.9388,
+      "N-VA": 7.1916,
+      "Open Vld": 4.0,
+      "TESAMEN": 4.0,
+      "VLAAMS BELANG": 4.0,
+      "Groen": 2.0,
+      "Onafhankelijk": 0.1641
+    },
+    "schepencollege": {
+      "N-VA": 3.0,
+      "CD&V": 2.0,
+      "Open Vld": 2.0
+    }
+  },
+  "Ternat": {
+    "gemeenteraad": {
+      "Voor Ternat": 7.1126,
+      "#volks": 5.0337,
+      "CD&V en Volks": 4.9684,
+      "N-VA": 4.5242,
+      "Open Vld +": 1.5368,
+      "Sp.aGroenXL": 1.4189,
+      "Vooruit-GroenXL": 0.5811,
+      "Onafhankelijk": 0.5442,
+      "Blauw Ternat": 0.4653
+    },
+    "schepencollege": {
+      "#volks": 2.5074,
+      "Voor Ternat": 2.3947,
+      "CD&V en Volks": 1.2316,
+      "N-VA": 1.0642,
+      "Open Vld +": 0.3126,
+      "Blauw Ternat": 0.2326
+    }
+  },
+  "Tervuren": {
+    "gemeenteraad": {
+      "N-VA": 9.007,
+      "Groen+": 6.0,
+      "Tervuren Unie": 5.0,
+      "CD&V": 4.0,
+      "Democraten Tervuren": 4.0
+    },
+    "schepencollege": {
+      "N-VA": 3.0,
+      "CD&V": 2.0,
+      "Groen+": 2.0
+    }
+  },
+  "Tessenderlo": {
+    "gemeenteraad": {
+      "Vooruit-SPiL": 8.7639,
+      "CD&V": 5.8687,
+      "N-VA": 3.8943,
+      "Open Vld": 1.949,
+      "LOOI.nu": 1.948,
+      "Groen": 0.9736,
+      "Onafhankelijk": 0.9736
+    },
+    "schepencollege": {
+      "Vooruit-SPiL": 3.6664,
+      "CD&V": 2.3318
+    }
+  },
+  "Tessenderlo-Ham": {
+    "gemeenteraad": {
+      "CD&V": 8.0,
+      "Open Vld": 6.0006,
+      "N-VA": 2.0,
+      "VLAAMS BELANG": 2.0,
+      "sp.a": 2.0,
+      "Groen": 1.0
+    },
+    "schepencollege": {
+      "CD&V": 3.6099,
+      "Open Vld": 2.3862
+    }
+  },
+  "Tielt": {
+    "gemeenteraad": {
+      "CD&V": 12.994,
+      "N-VA/Open Vld": 6.9977,
+      "Iedereen Tielt": 3.9982,
+      "Vooruit": 1.9995,
+      "Groen": 0.9995
+    },
+    "schepencollege": {
+      "CD&V": 4.9982,
+      "Iedereen Tielt": 1.9991
+    }
+  },
+  "Tielt-Winge": {
+    "gemeenteraad": {
+      "Open Vld": 7.0,
+      "CD&V": 5.0,
+      "N-VA": 4.0016,
+      "Samen": 4.0,
+      "Groen": 1.0
+    },
+    "schepencollege": {
+      "CD&V": 3.0,
+      "Open Vld": 3.0
+    }
+  },
+  "Tienen": {
+    "gemeenteraad": {
+      "CD&V": 9.0015,
+      "sp.a": 5.001,
+      "N-VA": 5.0005,
+      "Tienen Vooruit!": 4.0,
+      "Groen": 3.0005,
+      "Open Vld": 3.0005,
+      "VLAAMS BELANG": 2.001
+    },
+    "schepencollege": {
+      "CD&V": 2.5378,
+      "N-VA": 2.0,
+      "Open Vld": 2.0,
+      "Groen": 1.4622
+    }
+  },
+  "Tongeren-Borgloon": {
+    "gemeenteraad": {
+      "Tongeren.nu VLD CD&V": 14.0,
+      "sp.a": 9.001,
+      "N-VA": 4.001,
+      "Groen": 2.0,
+      "Onafhankelijk": 2.0
+    },
+    "schepencollege": {
+      "Tongeren.nu VLD CD&V": 6.0,
+      "sp.a": 2.0
+    }
+  },
+  "Torhout": {
+    "gemeenteraad": {
+      "CD&V Torhout": 13.9896,
+      "N-VA Torhout": 5.0005,
+      "Groen Torhout": 4.0,
+      "Vooruit": 3.0005,
+      "Onafhankelijk raadslid": 1.0,
+      "Sp.a": 0.0005
+    },
+    "schepencollege": {
+      "CD&V Torhout": 6.0,
+      "Vooruit": 1.0005
+    }
+  },
+  "Tremelo": {
+    "gemeenteraad": {
+      "CD&V": 8.0017,
+      "Open Vld": 5.0,
+      "N-VA": 3.0,
+      "Groen": 2.0,
+      "Onafhankelijk": 2.0,
+      "VLAAMS BELANG": 2.0,
+      "sp.a": 1.0
+    },
+    "schepencollege": {
+      "CD&V": 4.0,
+      "Groen": 1.0,
+      "N-VA": 1.0
+    }
+  },
+  "Turnhout": {
+    "gemeenteraad": {
+      "N-VA": 8.0006,
+      "Vlaams Belang": 7.0,
+      "T.I.M.": 5.0006,
+      "sp.a": 5.0,
+      "Groen": 4.0006,
+      "CD&V": 4.0,
+      "Open Vld": 1.0,
+      "PVDA": 1.0
+    },
+    "schepencollege": {
+      "CD&V": 2.0,
+      "Groen": 2.0,
+      "N-VA": 2.0,
+      "sp.a": 2.0
+    }
+  },
+  "Veurne": {
+    "gemeenteraad": {
+      "Veurne Plus": 7.0,
+      "N-VA": 6.9695,
+      "CD&V": 6.2122,
+      "!nspraak": 1.0,
+      "Onafhankelijk": 1.0
+    },
+    "schepencollege": {
+      "CD&V": 3.0,
+      "Veurne Plus": 3.0
+    }
+  },
+  "Vilvoorde": {
+    "gemeenteraad": {
+      "Vooruit": 10.0,
+      "Open Vld": 8.0,
+      "CD&V": 5.0007,
+      "N-VA": 4.0013,
+      "Groen": 3.0,
+      "UF": 2.0,
+      "Onafhankelijk": 1.0007,
+      "PVDA*PTB": 1.0,
+      "Vlaams Belang": 1.0
+    },
+    "schepencollege": {
+      "Open Vld": 3.0,
+      "Vooruit": 3.0,
+      "CD&V": 1.0,
+      "Groen": 1.0
+    }
+  },
+  "Vleteren": {
+    "gemeenteraad": {
+      "LVP": 9.0,
+      "VLETEREN ACTIEF": 3.9884
+    },
+    "schepencollege": {
+      "LVP": 4.0
+    }
+  },
+  "Voeren": {
+    "gemeenteraad": {
+      "Voerbelangen": 9.0015,
+      "RAL": 5.0015,
+      "Onafhankelijk": 1.0
+    },
+    "schepencollege": {
+      "Voerbelangen": 3.0,
+      "RAL": 1.0
+    }
+  },
+  "Vorselaar": {
+    "gemeenteraad": {
+      "Actiev": 15.2402,
+      "Koester 2290": 4.0
+    },
+    "schepencollege": {
+      "Actiev": 5.0
+    }
+  },
+  "Vosselaar": {
+    "gemeenteraad": {
+      "N-VA": 7.9909,
+      "VOLK": 7.3802,
+      "V!SIE op Vosselaar": 2.0006,
+      "Vosselaar Vooruit": 1.0006,
+      "Onafhankelijk": 1.0,
+      "VOORUIT": 1.0,
+      "CD&V": 0.5846
+    },
+    "schepencollege": {
+      "VOLK": 1.5613,
+      "N-VA": 1.2412,
+      "Onafhankelijk": 0.5868,
+      "V!SIE op Vosselaar": 0.5868,
+      "VOORUIT": 0.5868,
+      "CD&V": 0.4137
+    }
+  },
+  "Waasmunster": {
+    "gemeenteraad": {
+      "CD&V / Burgemeester": 8.0007,
+      "Open Vld": 6.98,
+      "N-VA": 3.0,
+      "Onafhankelijk": 2.0,
+      "Groen": 1.0
+    },
+    "schepencollege": {
+      "CD&V / Burgemeester": 3.7769,
+      "N-VA": 2.209,
+      "Onafhankelijk": 0.0148
+    }
+  },
+  "Wachtebeke": {
+    "gemeenteraad": {
+      "ANDERS": 8.7535,
+      "Open Vld": 4.9122,
+      "CD&V": 2.9467,
+      "N-VA": 0.9824,
+      "Onafhankelijk": 0.9824
+    },
+    "schepencollege": {
+      "ANDERS": 2.9824,
+      "Open Vld": 2.0
+    }
+  },
+  "Waregem": {
+    "gemeenteraad": {
+      "CD&V": 20.0,
+      "N-VA / Open Vld": 4.8534,
+      "Groen": 3.0,
+      "Vlaams Belang": 1.6597,
+      "N-VA+": 1.466,
+      "Onafhankelijk": 1.0209,
+      "Vooruit": 1.0,
+      "sp.a": 0.0007
+    },
+    "schepencollege": {
+      "CD&V": 8.0
+    }
+  },
+  "Wellen": {
+    "gemeenteraad": {
+      "Vooruit-rob": 8.9432,
+      "Open Vld": 4.0,
+      "CD&V": 3.0,
+      "VOOR ALLE WELLENAREN": 2.0202,
+      "N-VA": 1.0
+    },
+    "schepencollege": {
+      "Vooruit-rob": 2.6734,
+      "CD&V": 2.0
+    }
+  },
+  "Wemmel": {
+    "gemeenteraad": {
+      "LB Wemmel": 10.8314,
+      "Intérêts Communaux": 6.0,
+      "Wemmel Plus!": 5.0023,
+      "Onafhankelijk": 2.1708
+    },
+    "schepencollege": {
+      "LB Wemmel": 4.0,
+      "Intérêts Communaux": 1.0,
+      "Wemmel Plus!": 1.0
+    }
+  },
+  "Wervik": {
+    "gemeenteraad": {
+      "sp.a": 9.0024,
+      "OPEN VLD-GROEN-PP": 6.5024,
+      "CD&V": 5.5311,
+      "N-VA": 3.2692
+    },
+    "schepencollege": {
+      "sp.a": 2.9316,
+      "CD&V": 1.7198,
+      "OPEN VLD-GROEN-PP": 1.2839
+    }
+  },
+  "Westerlo": {
+    "gemeenteraad": {
+      "CD&V": 14.0471,
+      "N-VA": 6.0,
+      "OPEN & Positief Wlo": 3.9855,
+      "Onafhankelijk": 2.0,
+      "Groen": 1.0
+    },
+    "schepencollege": {
+      "CD&V": 7.0007
+    }
+  },
+  "Wetteren": {
+    "gemeenteraad": {
+      "CD&V": 6.9535,
+      "Open VLD": 4.2644,
+      "N-VA": 4.1936,
+      "Groen&Co": 3.9924,
+      "Vlaams Belang": 3.0005,
+      "Eén": 3.0,
+      "Onafhankelijk": 2.5795,
+      "Vooruit": 1.0
+    },
+    "schepencollege": {
+      "CD&V": 3.0005,
+      "Groen&Co": 2.0,
+      "Eén": 1.4936,
+      "Vooruit": 0.5064
+    }
+  },
+  "Wevelgem": {
+    "gemeenteraad": {
+      "CD&V": 17.0966,
+      "N-VA": 5.001,
+      "Groen": 4.0,
+      "Vooruit": 2.001,
+      "Onafhankelijk": 1.0,
+      "Onafhankelijken": 1.0,
+      "VLAAMS BELANG": 1.0
+    },
+    "schepencollege": {
+      "CD&V": 8.0
+    }
+  },
+  "Wezembeek-Oppem": {
+    "gemeenteraad": {
+      "LB-Union": 18.0,
+      "WOplus": 4.983
+    },
+    "schepencollege": {
+      "LB-Union": 5.8534
+    }
+  },
+  "Wichelen": {
+    "gemeenteraad": {
+      "Samen": 13.0006,
+      "N-VA": 3.0006,
+      "Anders": 2.0006,
+      "CD&V": 2.0,
+      "Vlaams Belang": 1.0006
+    },
+    "schepencollege": {
+      "Samen": 6.0
+    }
+  },
+  "Wielsbeke": {
+    "gemeenteraad": {
+      "CD&V": 11.0033,
+      "U.": 5.0007,
+      "N-VA": 4.0007,
+      "Vlaams Belang": 1.0
+    },
+    "schepencollege": {
+      "CD&V": 5.002
+    }
+  },
+  "Wijnegem": {
+    "gemeenteraad": {
+      "N-VA": 8.9909,
+      "VLAAMS BELANG": 4.0007,
+      "dorpspartij durf!": 4.0007,
+      "CD&V": 2.0007,
+      "Groen": 2.0007
+    },
+    "schepencollege": {
+      "N-VA": 2.9876,
+      "dorpspartij durf!": 2.0007
+    }
+  },
+  "Willebroek": {
+    "gemeenteraad": {
+      "N-VA": 11.9872,
+      "Vooruit": 6.1748,
+      "CD&V": 4.0007,
+      "Onafhankelijk": 3.8259,
+      "Groen": 3.0007,
+      "Open VLD": 1.0
+    },
+    "schepencollege": {
+      "N-VA": 3.5494,
+      "Groen": 1.5323,
+      "Open VLD": 1.0007,
+      "CD&V": 0.4691
+    }
+  },
+  "Wingene": {
+    "gemeenteraad": {
+      "CD&V": 17.0108,
+      "Burgerbelangen": 3.9946,
+      "N-VA": 2.0
+    },
+    "schepencollege": {
+      "CD&V": 6.0108
+    }
+  },
+  "Wommelgem": {
+    "gemeenteraad": {
+      "N-VA": 11.0023,
+      "Gemeentebelangen": 3.0,
+      "Groen": 3.0,
+      "Open Vld": 3.0,
+      "Vlaams Belang": 2.0,
+      "Onafhankelijk": 1.0
+    },
+    "schepencollege": {
+      "N-VA": 4.0,
+      "Open Vld": 2.0
+    }
+  },
+  "Wortegem-Petegem": {
+    "gemeenteraad": {
+      "Open Vld": 11.0,
+      "N-VA Wortegem-Petegem": 3.0007,
+      "CD&V": 1.0,
+      "Onafhankelijk": 1.0,
+      "Vooruit": 1.0,
+      "sp.a/onafhankelijk": 0.0007
+    },
+    "schepencollege": {
+      "Open Vld": 5.0
+    }
+  },
+  "Wuustwezel": {
+    "gemeenteraad": {
+      "CD&V": 16.0013,
+      "N-VA": 3.9115,
+      "Open Vld": 2.0007,
+      "Plus": 2.0007,
+      "Onafhankelijke": 2.0,
+      "Vlaams Belang": 1.0
+    },
+    "schepencollege": {
+      "CD&V": 7.0007
+    }
+  },
+  "Zandhoven": {
+    "gemeenteraad": {
+      "CD&V": 14.0,
+      "N-VA Zandhoven": 6.0011,
+      "Vlaams Belang": 2.0005,
+      "Groen": 1.0005
+    },
+    "schepencollege": {
+      "CD&V": 6.2231
+    }
+  },
+  "Zaventem": {
+    "gemeenteraad": {
+      "Open Vld": 12.5493,
+      "N-VA": 7.0,
+      "U.F.": 6.0453,
+      "CD&V": 4.0,
+      "PRO-Zaventem": 1.9715,
+      "Groen": 0.0005
+    },
+    "schepencollege": {
+      "Open Vld": 5.5619,
+      "CD&V": 2.4375
+    }
+  },
+  "Zedelgem": {
+    "gemeenteraad": {
+      "CD&V-Nieuw": 18.9708,
+      "N-VA": 2.0194,
+      "Groen": 2.0009,
+      "Vlaams Belang": 2.0005,
+      "sp.a": 1.0
+    },
+    "schepencollege": {
+      "CD&V-Nieuw": 6.9783
+    }
+  },
+  "Zele": {
+    "gemeenteraad": {
+      "CD&V": 11.989,
+      "Open-VLD": 5.1733,
+      "N-VA - Zele Vlakaf": 4.0006,
+      "Leefbaarder Zele": 2.0006,
+      "SP.A": 2.0,
+      "Onafhankelijk": 1.0,
+      "Open Vld": 0.8278
+    },
+    "schepencollege": {
+      "CD&V": 6.0,
+      "SP.A": 1.0077,
+      "Leefbaarder Zele": 0.4972
+    }
+  },
+  "Zelzate": {
+    "gemeenteraad": {
+      "Vooruit": 7.0009,
+      "PVDA": 6.0,
+      "Onafhankelijk raadslid": 2.8452,
+      "Open VLD": 2.7463,
+      "N-VA": 1.0009,
+      "VLAAMS BELANG": 1.0,
+      "VLD-SD": 0.6311,
+      "CD&V": 0.5546,
+      "ZELZATE POSITIEF": 0.4463,
+      "Onafhankelijk": 0.4213
+    },
+    "schepencollege": {
+      "Vooruit": 3.0,
+      "PVDA": 2.0
+    }
+  },
+  "Zemst": {
+    "gemeenteraad": {
+      "CD&V": 9.0,
+      "N-VA": 9.0,
+      "Vlam": 4.0,
+      "Open Vld": 2.0064,
+      "Groen": 2.0,
+      "Vlaams Belang": 1.0,
+      "sp.a": 1.0
+    },
+    "schepencollege": {
+      "N-VA": 4.0,
+      "Groen": 1.0,
+      "Vlam": 1.0,
+      "sp.a": 1.0
+    }
+  },
+  "Zoersel": {
+    "gemeenteraad": {
+      "N-VA": 9.6177,
+      "CD&V": 8.0,
+      "Heerlijk Zoersel": 2.6881,
+      "Groen": 2.0005,
+      "Vlaams Belang": 2.0,
+      "Onafhankelijk": 1.6972,
+      "Open VLD": 1.0
+    },
+    "schepencollege": {
+      "N-VA": 3.0785,
+      "CD&V": 1.7505,
+      "Groen": 1.0005,
+      "Open VLD": 1.0005,
+      "Onafhankelijk": 0.174
+    }
+  },
+  "Zonhoven": {
+    "gemeenteraad": {
+      "Open Vld": 14.0,
+      "CD&V - GROEN": 3.9638,
+      "N-VA": 3.0009,
+      "ZONSHOVEN": 3.0009,
+      "VLAAMS BELANG": 2.0,
+      "Onafhankelijk": 1.0
+    },
+    "schepencollege": {
+      "Open Vld": 7.0
+    }
+  },
+  "Zonnebeke": {
+    "gemeenteraad": {
+      "TEAM 8980": 14.0,
+      "INSAMENSPRAAK": 5.0,
+      "NVA": 2.8697,
+      "Lijst Passendale": 1.0,
+      "Onafhankelijk": 0.1303
+    },
+    "schepencollege": {
+      "TEAM 8980": 6.0005
+    }
+  },
+  "Zottegem": {
+    "gemeenteraad": {
+      "N-VA": 8.0,
+      "sp.a": 7.0,
+      "CD&V": 6.0,
+      "Open Vld": 4.5949,
+      "Groen": 2.0,
+      "Onafhankelijk": 1.4062
+    },
+    "schepencollege": {
+      "N-VA": 5.0,
+      "CD&V": 3.0
+    }
+  },
+  "Zoutleeuw": {
+    "gemeenteraad": {
+      "CD&V": 12.0,
+      "SP.a": 2.0008,
+      "Onafhankelijk": 2.0,
+      "Open VLD": 2.0,
+      "N-VA": 1.0008
+    },
+    "schepencollege": {
+      "CD&V": 5.0
+    }
+  },
+  "Zuienkerke": {
+    "gemeenteraad": {
+      "Lijst Burgemeester": 11.0
+    },
+    "schepencollege": {
+      "Lijst Burgemeester": 4.0005
+    }
+  },
+  "Zulte": {
+    "gemeenteraad": {
+      "Open Zulte": 17.0009,
+      "CD&V": 5.9831,
+      "N-VA": 1.0244,
+      "GVZ": 1.0
+    },
+    "schepencollege": {
+      "Open Zulte": 6.0009
+    }
+  },
+  "Zutendaal": {
+    "gemeenteraad": {
+      "ZVP": 11.9745,
+      "CD&V": 6.0,
+      "VLAAMS BELANG": 0.7872
+    },
+    "schepencollege": {
+      "ZVP": 4.6741
+    }
+  },
+  "Zwalm": {
+    "gemeenteraad": {
+      "Open VLD": 8.9794,
+      "VoorZwalm": 7.0005,
+      "N-VA": 2.0,
+      "CD&V+": 1.0
+    },
+    "schepencollege": {
+      "VoorZwalm": 3.0,
+      "CD&V+": 1.0,
+      "N-VA": 1.0
+    }
+  },
+  "Zwevegem": {
+    "gemeenteraad": {
+      "Lijst Burgemeester": 8.0,
+      "CD&V": 7.3986,
+      "N-VA": 5.0,
+      "Groen": 3.0,
+      "SAMEN!": 1.8577,
+      "Onafhankelijk": 0.6025,
+      "Zwevegem Vooruit": 0.5172,
+      "NU.Zwevegem": 0.4833,
+      "sp.a": 0.1423
+    },
+    "schepencollege": {
+      "CD&V": 3.3964,
+      "Lijst Burgemeester": 2.0,
+      "SAMEN!": 1.4613,
+      "sp.a": 0.1423
+    }
+  },
+  "Zwijndrecht": {
+    "gemeenteraad": {
+      "N-VA": 8.9971,
+      "Groen": 8.0,
+      "CD&V": 3.0,
+      "Onafhankelijk": 2.0,
+      "Vooruit": 2.0,
+      "Vlaams Belang": 1.0058
+    },
+    "schepencollege": {
+      "Groen": 3.0,
+      "CD&V": 2.0,
+      "Vooruit": 1.0
+    }
+  }
+}
