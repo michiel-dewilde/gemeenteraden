@@ -72,6 +72,10 @@ Fracties in `gemeenteraad` en `schepencollege` zijn gesorteerd groot→klein, bi
 
 - **Fractienamen**: de Mandatendatabank gebruikt de naam zoals geregistreerd door de gemeente. Hernoemingen (bv. sp.a → Vooruit) kunnen als aparte fracties verschijnen in opeenvolgende perioden.
 - **`"Onbekend"` als fractienaam**: treedt op wanneer een mandataris geen fractielidmaatschap heeft, of wanneer de fractie-URI in de TTL-dump geen label heeft (data-lek in de bron).
+- **Manuele fractiecorrecties**: fracties die ontbreken als `mandaat:Fractie`-node én geen label hebben, worden gecorrigeerd via `_FRACTIE_CORRECTIES` in het script. Vastgesteld met `diagnose_fracties.py`; naam opgezocht via algemene websearch.
+  | Fractie-URI | Gemeente | Gecorrigeerde naam | Leden |
+  |-------------|----------|--------------------|-------|
+  | `cdd79247-de17-405a-b0d6-1aacb12db93f` | Aartselaar | N-VA | Jan Van der Heyden, Sophie De Wit |
 - **`"Onbekend"` als burgemeester**: de burgemeesteraanstelling is een apart administratief besluit dat soms later geregistreerd wordt; voor sommige perioden ontbreekt de fractielink.
 - **Variërend zetelgetal per gemeente**: tussentijdse vervangingen kunnen korte intervallen (1–5 dagen) veroorzaken met een afwijkend zetelgetal door overlap of een kleine gap in de registratie.
 - **Herstappe**: ontbreekt in de dataset (te kleine gemeente, geen eigen registratie).

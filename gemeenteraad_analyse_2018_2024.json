@@ -660,8 +660,8 @@
   ],
   "Aartselaar": [
     {
-      "dagen": 852,
-      "burgemeester": "Onbekend",
+      "dagen": 901,
+      "burgemeester": "N-VA",
       "gemeenteraad": {
         "N-VA": 13,
         "Open Vld": 4,
@@ -671,12 +671,13 @@
         "Onbekend": 1
       },
       "schepencollege": {
-        "Onbekend": 6
+        "Onbekend": 5,
+        "N-VA": 1
       }
     },
     {
       "dagen": 697,
-      "burgemeester": "Onbekend",
+      "burgemeester": "N-VA",
       "gemeenteraad": {
         "N-VA": 13,
         "Open Vld": 4,
@@ -686,12 +687,13 @@
         "Onafhankelijk": 1
       },
       "schepencollege": {
-        "Onbekend": 6
+        "Onbekend": 5,
+        "N-VA": 1
       }
     },
     {
       "dagen": 189,
-      "burgemeester": "Onbekend",
+      "burgemeester": "N-VA",
       "gemeenteraad": {
         "N-VA": 13,
         "Onafhankelijk": 5,
@@ -700,13 +702,14 @@
         "Groen": 1
       },
       "schepencollege": {
-        "Onbekend": 5,
+        "Onbekend": 4,
+        "N-VA": 1,
         "Onafhankelijk": 1
       }
     },
     {
       "dagen": 177,
-      "burgemeester": "Onbekend",
+      "burgemeester": "N-VA",
       "gemeenteraad": {
         "N-VA": 14,
         "Open Vld": 4,
@@ -716,12 +719,13 @@
         "Onafhankelijk": 1
       },
       "schepencollege": {
-        "Onbekend": 6
+        "Onbekend": 5,
+        "N-VA": 1
       }
     },
     {
       "dagen": 147,
-      "burgemeester": "Onbekend",
+      "burgemeester": "N-VA",
       "gemeenteraad": {
         "N-VA": 14,
         "Onafhankelijk": 5,
@@ -730,28 +734,14 @@
         "Groen": 1
       },
       "schepencollege": {
-        "Onbekend": 5,
+        "Onbekend": 4,
+        "N-VA": 1,
         "Onafhankelijk": 1
-      }
-    },
-    {
-      "dagen": 49,
-      "burgemeester": "Onbekend",
-      "gemeenteraad": {
-        "N-VA": 12,
-        "Open Vld": 4,
-        "Samen NAP": 3,
-        "Groen": 2,
-        "Onbekend": 2,
-        "Onafhankelijk": 1
-      },
-      "schepencollege": {
-        "Onbekend": 6
       }
     },
     {
       "dagen": 41,
-      "burgemeester": "Onbekend",
+      "burgemeester": "N-VA",
       "gemeenteraad": {
         "N-VA": 14,
         "Open Vld": 4,
@@ -761,20 +751,21 @@
         "Onbekend": 1
       },
       "schepencollege": {
-        "Onbekend": 6
+        "Onbekend": 5,
+        "N-VA": 1
       }
     },
     {
       "dagen": 6,
-      "burgemeester": "Onbekend",
+      "burgemeester": "N-VA",
       "gemeenteraad": {},
       "schepencollege": {
-        "Onbekend": 1
+        "N-VA": 1
       }
     },
     {
       "dagen": 2,
-      "burgemeester": "Onbekend",
+      "burgemeester": "N-VA",
       "gemeenteraad": {
         "N-VA": 13,
         "Open Vld": 4,
@@ -784,12 +775,13 @@
         "Onbekend": 1
       },
       "schepencollege": {
-        "Onbekend": 6
+        "Onbekend": 5,
+        "N-VA": 1
       }
     },
     {
       "dagen": 1,
-      "burgemeester": "Onbekend",
+      "burgemeester": "N-VA",
       "gemeenteraad": {
         "N-VA": 13,
         "Open Vld": 4,
@@ -799,12 +791,13 @@
         "Onafhankelijk": 1
       },
       "schepencollege": {
-        "Onbekend": 7
+        "Onbekend": 6,
+        "N-VA": 1
       }
     },
     {
       "dagen": 1,
-      "burgemeester": "Onbekend",
+      "burgemeester": "N-VA",
       "gemeenteraad": {
         "N-VA": 14,
         "Open Vld": 4,
@@ -814,12 +807,13 @@
         "Groen": 1
       },
       "schepencollege": {
-        "Onbekend": 6
+        "Onbekend": 5,
+        "N-VA": 1
       }
     },
     {
       "dagen": 1,
-      "burgemeester": "Onbekend",
+      "burgemeester": "N-VA",
       "gemeenteraad": {
         "N-VA": 14,
         "Onafhankelijk": 5,
@@ -828,7 +822,8 @@
         "Groen": 1
       },
       "schepencollege": {
-        "Onbekend": 5,
+        "Onbekend": 4,
+        "N-VA": 1,
         "Onafhankelijk": 1
       }
     }

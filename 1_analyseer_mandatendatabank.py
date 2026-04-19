@@ -101,12 +101,23 @@ _UUID_RE = re.compile(
     r'^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$', re.IGNORECASE
 )
 
+# Manuele correcties voor fracties die ontbreken in de inputdata (geen label, geen Fractie-node).
+# Vastgesteld via diagnose_fracties.py; naam opgezocht via algemene websearch.
+_FRACTIE_CORRECTIES = {
+    "http://data.lblod.info/id/fracties/cdd79247-de17-405a-b0d6-1aacb12db93f": "N-VA",
+    # Aartselaar: fractie ontbreekt als mandaat:Fractie-node en heeft geen label in de TTL-dump;
+    # leden: Jan Van der Heyden en Sophie De Wit; naam manueel gecorrigeerd.
+}
+
 def best_label(g, uri):
     """
     Geeft het beste beschikbare tekstlabel voor een URI terug.
     Geeft "Onbekend" als er geen label bestaat of de URI enkel een UUID bevat
     (wat betekent dat de fractie-beschrijving ontbreekt in de TTL-dump).
     """
+    uri_str = str(uri)
+    if uri_str in _FRACTIE_CORRECTIES:
+        return _FRACTIE_CORRECTIES[uri_str]
     for pred in (SKOS.prefLabel, REGORG.legalName, FOAF.name, SKOS.altLabel):
         for obj in g.objects(uri, pred):
             lbl = str(obj).strip()
